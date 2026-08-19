@@ -1,0 +1,145 @@
+{
+  "total_points": 100,
+  "rubrics": [
+    {
+      "name": "source_population_catalog_controls",
+      "weight": 8,
+      "rubric": "In the required final source_register.xlsx, establish the complete pre-analysis catalog population requested in the conversation and keep modeled bridge rows visibly separate from official catalog records. Grade the submitted evidence semantically; worksheet names and layout are not requirements.",
+      "disclosure": [
+        "User turn 24 requests every source record before analysis.",
+        "The resumed register, raw catalog bundles, and lineage manifest expose the catalog population and row fields."
+      ],
+      "criterion": [
+        "Makes exactly 1,514 official catalog trade records directly verifiable and does not count modeled bridge or summary rows as official catalog records.",
+        "Provides or makes directly countable the catalog-year controls 2015 = 263, 2016 = 251, 2017 = 500, and 2019 = 500.",
+        "Preserves row-level identifiers and the source fields needed to audit scope, including year, flow, partner dimensions, transport mode, value, inclusion status, and governing rule."
+      ]
+    },
+    {
+      "name": "source_quality_and_governance_controls",
+      "weight": 8,
+      "rubric": "In the required final source_register.xlsx, preserve the source-quality and current-governance decisions that control downstream work. Grade the submitted evidence semantically; worksheet names and layout are not requirements.",
+      "disclosure": [
+        "User turns 24 and 35 request quality decisions, current governing versions, and result-changing supersession.",
+        "Workspace quality flags, method releases, forecast setup, calendar material, and checkpoint governance sheets disclose the decisions and parameters."
+      ],
+      "criterion": [
+        "Excludes the invalid Census HTML and empty BLS series from numeric evidence while treating the Comtrade gap as a coverage control handled through the governed bridge.",
+        "Uses REV-MR-22-02 for headline total-row aggregation and REV-MR-23-03 / MODEL-BRIDGE-23-03 for the current forecast, recovery benchmark, and continuity threshold.",
+        "Carries the current 92% recovery benchmark and GBP 35,000 ERP-level threshold, and ties material decisions to concrete workspace evidence or business identifiers."
+      ]
+    },
+    {
+      "name": "entity_resolution_across_systems",
+      "weight": 8,
+      "rubric": "Across the required final source_register.xlsx and continuity_exposure.xlsx, resolve procurement, supplier-portal, BOM, and tariff identifiers to a stable ERP entity. Grade equivalent crosswalk and reconciliation evidence regardless of worksheet names or layout.",
+      "disclosure": [
+        "User turn 35 explicitly requests resolution of trade, procurement, supplier portal, BOM, and tariff identifiers to the same entity.",
+        "The material catalog, supplier appendix, order board, receipts, and resumed Entity_Resolution sheet disclose the mappings."
+      ],
+      "criterion": [
+        "Maps ERP-OC-1042 to acetonitrile, MRS-884, BOM-ACN-17, HS 292690, GBP 7.40 per kg, and its relevant purchase orders somewhere in the connected package.",
+        "Also maps ERP-OC-2055, ERP-OC-3188, and ERP-OC-7710 to their supplier portal, BOM, tariff, cost, and procurement identifiers.",
+        "Uses ERP code as the stable continuity key and treats other identifiers, including receipt order references, as mapped attributes or matching aids rather than independent entities."
+      ]
+    },
+    {
+      "name": "analysis_headline_total_and_gap_basis",
+      "weight": 8,
+      "rubric": "In the required final analysis_workbook.xlsx, use the governed all-world export-total basis and preserve the source distinction behind the 2019 export gap. Grade equivalent analysis evidence regardless of worksheet names or layout.",
+      "disclosure": [
+        "User turns 1 and 15 diagnose the source-coverage mismatch and require the official-versus-modeled distinction.",
+        "The trade totals, governed bridge, manifest, method releases, and resumed analysis workbook disclose the basis and values."
+      ],
+      "criterion": [
+        "Uses all-world headline total rows rather than stacking partner, route, or transport-mode rows.",
+        "Reports 2015 exports about USD 13,948,039,379 and 2017 exports about USD 10,576,287,128, each within 1% tolerance.",
+        "Marks the 2019 export value as macro_bridge or equivalent modeled status and uses the governed value of about USD 11,883,876,287 rather than zero-filling or substituting imports."
+      ]
+    },
+    {
+      "name": "analysis_recovery_and_forecast_from_register",
+      "weight": 8,
+      "rubric": "In the required final analysis_workbook.xlsx, carry the register-controlled bridge, recovery benchmark, and current forecast method into the numeric analysis without imposing worksheet, deck, or memo placement requirements.",
+      "disclosure": [
+        "User turns 45, 49, and 60 require the numeric workbook to be downstream of the register and use its population, quality, and version choices.",
+        "The forecast setup, governed bridge, method releases, and resumed numeric workbook expose the recovery and forecast calculations."
+      ],
+      "criterion": [
+        "Reports the 2019 bridge baseline around USD 11,883,876,287, 2020 at about 80.10% of baseline, and 2021 at about 102.45% of baseline, with 2021 clearing the 92% benchmark.",
+        "Reports 2023 forecast exports within USD 11.126-11.465 billion and 2024 forecast exports within USD 9.656-9.951 billion.",
+        "Identifies the forecast as the current REV-MR-23-03 / MODEL-BRIDGE-23-03 bridged-history method and keeps modeled values distinct from official observations."
+      ]
+    },
+    {
+      "name": "po_population_and_reconciliation",
+      "weight": 10,
+      "rubric": "Across the required final source_register.xlsx and continuity_exposure.xlsx, reconcile the complete purchase-order population using the workspace receipt and normalization decisions. Grade equivalent reconciliation evidence regardless of worksheet names or layout.",
+      "disclosure": [
+        "The final user turn requests a reconciled continuity-exposure workbook on the register-controlled basis.",
+        "The order board, receipt extract, receiving runbook, receipt email, logs, and checkpoint procurement sheets disclose the population and dirty-record handling."
+      ],
+      "criterion": [
+        "Enumerates exactly PO-2022-10488, PO-2022-10491, PO-2022-10502, PO-2022-10508, and PO-2022-10517.",
+        "Shows open quantities of 21,850 kg, 0 kg, 5,500 kg, 15,000 kg, and 0 kg respectively, either directly or through transparent reconciliation.",
+        "Demonstrates that partial fulfillments were reconciled and identifies at least one relevant workspace-documented matching, reversal, status, or UK-date normalization issue; evidence may be split between the controlled register and continuity workbook."
+      ]
+    },
+    {
+      "name": "calendar_and_reserve_application",
+      "weight": 10,
+      "rubric": "Across the required final continuity_exposure.xlsx and decision_memo.docx, apply the working-calendar exception and finance-reserve rule. The calculation and narrative evidence may be split between the files; worksheet names and layout are not requirements.",
+      "disclosure": [
+        "The final user turn requests continuity exposure reconciled from the governed register basis.",
+        "The working calendar, calendar notice, reserve email, operational rules, and resumed analysis disclose the dates and reserve parameter."
+      ],
+      "criterion": [
+        "Calculates PO-2022-10488 delivery as 2023-01-05 after applying the additional 2022-12-28 non-working inbound day.",
+        "Preserves the 2023-01-04 dock target and makes clear that the governed delivery is later than that target.",
+        "Applies the documented 12% finance or expedite reserve consequence to the affected exposure."
+      ]
+    },
+    {
+      "name": "tier_chain_exposure_and_transition_exception",
+      "weight": 10,
+      "rubric": "Across the required final continuity_exposure.xlsx, risk_map_deck.pptx, and decision_memo.docx, calculate the Atlas-to-MiraSolv exposure and apply the transition exception consistently. Grade equivalent calculation and decision evidence regardless of worksheet, slide, or section names.",
+      "disclosure": [
+        "The final user turn requests a continuity-exposure package reconciled from the same governed basis.",
+        "Supply pathways, the 58% throughput log, material costs, reserve evidence, and the CR-2219 email disclose every factor and the exception treatment."
+      ],
+      "criterion": [
+        "Treats Atlas Nitriles / ATN-044 at 58% throughput as a 42% loss and propagates it using REL-ACN-31 at 0.64 and REL-ACN-42 at 0.72.",
+        "Reports a combined impacted fraction of 0.193536 and impacted quantity about 4,228.76 kg for PO-2022-10488 within 1% tolerance.",
+        "Reports ERP-OC-1042 risk-adjusted exposure around GBP 35,047.98 and treats the threshold breach as a CR-2219 transition-watch item rather than a supplier-policy violation."
+      ]
+    },
+    {
+      "name": "remaining_entity_risk_classification",
+      "weight": 10,
+      "rubric": "In the required final continuity_exposure.xlsx and downstream package, preserve the reconciled exposure values and threshold classifications for the remaining ERP entities. Grade equivalent risk evidence regardless of worksheet names or layout.",
+      "disclosure": [
+        "The final user turn requests one internally consistent continuity package.",
+        "The order, receipt, cost, threshold, and entity-resolution evidence in the workspace supports these rows."
+      ],
+      "criterion": [
+        "Identifies ERP-OC-3188 / PO-2022-10502 and ERP-OC-7710 / PO-2022-10508 as the next two positive-exposure entities after ERP-OC-1042.",
+        "Reports exposures around GBP 10,065 for ERP-OC-3188 and GBP 9,300 for ERP-OC-7710, each within 1% tolerance.",
+        "Classifies both below the GBP 35,000 threshold and does not present them as supplier-policy actions."
+      ]
+    },
+    {
+      "name": "cross_artifact_internal_consistency",
+      "weight": 20,
+      "rubric": "Treat the five required final files source_register.xlsx, analysis_workbook.xlsx, continuity_exposure.xlsx, risk_map_deck.pptx, and decision_memo.docx as one internally consistent package. Worksheet, slide, and section names are not graded.",
+      "disclosure": [
+        "User turns 45 and 49 establish register-first downstream work.",
+        "The final user turn names all five deliverables and explicitly requires one internally consistent set."
+      ],
+      "criterion": [
+        "Provides all five named deliverables under /app/output.",
+        "Keeps the official-versus-modeled distinction, governing versions, forecast posture, entity identities, threshold, and exception treatment consistent across the files that discuss them.",
+        "Uses the same risk IDs or equivalent entity labels and the same exposure values and decisions in the continuity workbook, deck, and memo, without contradictory independent recomputation."
+      ]
+    }
+  ]
+}

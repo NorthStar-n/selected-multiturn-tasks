@@ -1,0 +1,20 @@
+From: Luca Bennett <luca.bennett@northbank-analytics.co.uk>
+To: Priya Nair <priya.nair@northbank-analytics.co.uk>
+Cc: Meredith Chen <meredith.chen@northbank-analytics.co.uk>
+Subject: Catalog flags for February HS chapter refresh
+Date: Wed, 25 Jan 2023 16:48:02 +0000
+Message-ID: <20230125164802.flags@northbank-analytics.co.uk>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Priya,
+
+I checked the February manifest. The Census capture is still an invalid-key H=
+TML response, and the BLS stub has no observations. The ILO sector file is po=
+pulated, so I will use it for the labor context if the method release needs e=
+mployment.
+
+Luca Bennett
+Market Analytics
++44 20 7946 0128

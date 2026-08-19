@@ -1,0 +1,1 @@
+carry the workbook decision into a concise editable pharmacist_note.docx. Keep unresolved questions tied to the same evidence and use an owner and timing table so each follow up is actionable. Put both files under /app/output/

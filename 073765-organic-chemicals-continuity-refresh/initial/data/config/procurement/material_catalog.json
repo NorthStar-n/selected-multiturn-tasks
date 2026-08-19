@@ -1,0 +1,39 @@
+{
+  "catalog_id": "MAT-REF-2022-W52",
+  "currency": "GBP",
+  "review_threshold_gbp": 35000,
+  "records": [
+    {
+      "erp_code": "ERP-OC-1042",
+      "description": "Acetonitrile intermediate, high-purity",
+      "unit_cost_gbp_per_kg": 7.4,
+      "bom_ref": "BOM-ACN-17",
+      "supplier_portal_id": "MRS-884",
+      "hs_tariff_code": "292690"
+    },
+    {
+      "erp_code": "ERP-OC-2055",
+      "description": "Phenoxy solvent blend",
+      "unit_cost_gbp_per_kg": 5.6,
+      "bom_ref": "BOM-PHX-22",
+      "supplier_portal_id": "BRL-501",
+      "hs_tariff_code": "290949"
+    },
+    {
+      "erp_code": "ERP-OC-3188",
+      "description": "Pyridine derivative concentrate",
+      "unit_cost_gbp_per_kg": 12.2,
+      "bom_ref": "BOM-PYR-08",
+      "supplier_portal_id": "NVC-337",
+      "hs_tariff_code": "293331"
+    },
+    {
+      "erp_code": "ERP-OC-7710",
+      "description": "Alkylate stabilizer package",
+      "unit_cost_gbp_per_kg": 3.1,
+      "bom_ref": "BOM-ALK-41",
+      "supplier_portal_id": "HEL-290",
+      "hs_tariff_code": "290919"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+name = "parsewave/018026-group-sales-ramp-readiness"
+artifacts = [ "/app/output",]
+schema_version = "1.2"
+multi_step_reward_strategy = "final"
+
+[task]
+name = "parsewave/018026-group-sales-ramp-readiness"
+
+[verifier]
+timeout_sec = 2200
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 3600.0
+cpus = 4
+memory_mb = 4096
+storage_mb = 10240
+
+[metadata.multiturn]
+mode = "native_resume"
+session_format = "native_sweagent_traj"
+portable_audit_format = "ATIF-v1.5"
+history_conversion = true
+runtime_adapter = "all_for_one.multiturn.harbor_sweagent_resume:SweAgentResume"
+native_session_path = "conversation/conversation.traj"
+current_user_path = "instruction.md"
+checkpoint_workspace = "/app/task"
+checkpoint_archive_workspace_prefix = ""
+environment_layout = "dual_initial_resume_v1"
+initial_environment_path = "initial"
+initial_environment_sha256 = "729b123beb96613894f3a46a1d59e112e234451847a8e4d2d54de1b24fbac96f"
+resume_environment_path = "environment"
+source_artifact_paths = [ "/app/output",]
+handoff_required_submission_paths = [ "/app/output",]
+portable_audit_warning = "atif_schema_version_upgrade_deferred: emitted ATIF-v1.5; preferred ATIF-v1.7"
+history_extension_kind = "acknowledgement_only_no_workspace_change"
+construction_harness = "codex"
+official_resume_harness = "sweagent"
+trajectory_path = "conversation/conversation.traj"
+sweagent_session_path = "conversation/conversation.traj"
+resume_trajectory_sha256 = "a8ae5ba7cf2a151d332c5be3f8a1ef0fcd1eed951f060763d2124f8b4f487b58"
+replay_config_sha256 = "6ae3f097ced58d0d5b2730ce529bc555ed124cbe043db5c1a16471aecf3d8d21"
+converter_commit = "9b285839b6ec4c9aadc6234a95f28d1af66f3b3e"
+conversion_mode = "legacy_jsonl"
+

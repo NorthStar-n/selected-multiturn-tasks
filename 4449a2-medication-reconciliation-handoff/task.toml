@@ -1,0 +1,40 @@
+name = "parsewave/4449a2-medication-reconciliation-handoff"
+artifacts = [ "/app/output",]
+schema_version = "1.2"
+multi_step_reward_strategy = "final"
+
+[task]
+name = "parsewave/4449a2-medication-reconciliation-handoff"
+
+[verifier]
+timeout_sec = 2200
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 4
+memory_mb = 4096
+storage_mb = 10240
+
+[metadata.multiturn]
+mode = "native_resume"
+construction_harness = "codex"
+official_resume_harness = "sweagent"
+session_format = "native_sweagent_traj"
+portable_audit_format = "ATIF-v1.5"
+history_conversion = true
+runtime_adapter = "all_for_one.multiturn.harbor_sweagent_resume:SweAgentResume"
+trajectory_path = "conversation/conversation.traj"
+native_session_path = "conversation/conversation.traj"
+sweagent_session_path = "conversation/conversation.traj"
+current_user_path = "instruction.md"
+resume_trajectory_sha256 = "8eee076009b59b7d8bcca8b828e7a46b6e059e9fd9678424b1a37cd8b3c6ebd6"
+initial_environment_sha256 = "000cdf75d2ce55e3cad88f23be68313b0647eca45f177191e515d67fcff94772"
+replay_config_sha256 = "bd857dfb5023c2252ed091103e3b3495423331390340dec53f578e601ce40250"
+environment_layout = "dual_initial_resume_v1"
+initial_environment_path = "initial"
+resume_environment_path = "environment"
+converter_commit = "9b285839b6ec4c9aadc6234a95f28d1af66f3b3e"
+conversion_mode = "legacy_jsonl"

@@ -1,0 +1,22 @@
+{
+  "catalog_quality_flags": [
+    {
+      "flag": "census_trade_html_error",
+      "scope": "supply_chain/census_trade/",
+      "local_evidence_id": "QUAL-CENSUS-HTML-01",
+      "implication": "Census trade text artifacts are invalid-key HTML responses and are excluded from evidence."
+    },
+    {
+      "flag": "bls_empty_series_possible",
+      "scope": "supply_chain/bls/",
+      "local_evidence_id": "QUAL-BLS-EMPTY-01",
+      "implication": "BLS series stubs with no observations are excluded; non-empty ILO labor series may be used."
+    },
+    {
+      "flag": "comtrade_country_hs_year_gaps",
+      "scope": "supply_chain/comtrade/",
+      "local_evidence_id": "QUAL-COMTRADE-GAP-01",
+      "implication": "Country-HS-year coverage is uneven; enumerate records and bridge missing years only under the governing method release."
+    }
+  ]
+}

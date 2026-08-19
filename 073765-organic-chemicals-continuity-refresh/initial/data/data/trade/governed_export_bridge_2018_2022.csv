@@ -1,0 +1,6 @@
+bridge_obs_id,year,series_status,export_value_usd,evidence_anchor,note
+BRIDGE-GBR-HS29-2018,2018,macro_bridge,12486639544.998869,MODEL-BRIDGE-23-03,governed export bridge value for missing official catalog year
+BRIDGE-GBR-HS29-2019,2019,macro_bridge,11883876287.378645,MODEL-BRIDGE-23-03,governed export bridge value for missing official catalog year
+BRIDGE-GBR-HS29-2020,2020,macro_bridge,9519434930.186693,MODEL-BRIDGE-23-03,governed export bridge value for missing official catalog year
+BRIDGE-GBR-HS29-2021,2021,macro_bridge,12174643931.863209,MODEL-BRIDGE-23-03,governed export bridge value for missing official catalog year
+BRIDGE-GBR-HS29-2022,2022,macro_bridge,13913594485.95777,MODEL-BRIDGE-23-03,governed export bridge value for missing official catalog year

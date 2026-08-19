@@ -1,0 +1,21 @@
+From: Priya Nair <priya.nair@northbank-analytics.co.uk>
+To: Luca Bennett <luca.bennett@northbank-analytics.co.uk>,
+ Meredith Chen <meredith.chen@northbank-analytics.co.uk>
+Cc: Samir Patel <samir.patel@northbank-analytics.co.uk>
+Subject: Re: monthly HS chapter review method release
+Date: Mon, 21 Nov 2022 09:42:18 +0000
+Message-ID: <20221121094218.rev2@northbank-analytics.co.uk>
+References: <20221118171102.rev2@northbank-analytics.co.uk>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Luca,
+
+Use REV-MR-22-02 for the route aggregation clause only. REV-MR-22-01 remains =
+attached for audit history, but its route-row stacking language is no longer =
+acceptable for partner summaries.
+
+Priya Nair
+Trade Data Manager
++44 20 7946 0382

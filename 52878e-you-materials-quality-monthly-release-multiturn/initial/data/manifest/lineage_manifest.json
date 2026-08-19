@@ -1,0 +1,54 @@
+{
+  "package_id": "CU-JULY-2026-QUAL",
+  "prepared_by": "Materials data office",
+  "prepared_at": "2026-07-09T18:00:00Z",
+  "source_quality_flags": [
+    {
+      "flag": "cod_element_coverage_gaps",
+      "scope": "data/catalog/cod_Cu.json",
+      "implication": "Copper has an explicit COD element file; absence of other explicit element files is not evidence of compound absence."
+    },
+    {
+      "flag": "literature_search_false_positives",
+      "scope": "data/catalog/openalex_materials_page01.json and data/catalog/arxiv_*.json",
+      "implication": "Literature metadata can match broad copper topics; accept only DOI/title-supported material property evidence."
+    }
+  ],
+  "lineage": [
+    {
+      "source_id": "CAT-COD-CU",
+      "path": "data/catalog/cod_Cu.json",
+      "role": "crystal structures"
+    },
+    {
+      "source_id": "CAT-AFLOW",
+      "path": "data/catalog/aflow_compounds.json",
+      "role": "computed AFLOW library"
+    },
+    {
+      "source_id": "CAT-OQMD",
+      "path": "data/catalog/oqmd_formation_energies.json",
+      "role": "computed formation energies"
+    },
+    {
+      "source_id": "CAT-NIST",
+      "path": "data/catalog/nist_materials_records.json",
+      "role": "reference records"
+    },
+    {
+      "source_id": "LAB-COND",
+      "path": "data/lab_reports/conductivity_panel_tests.csv",
+      "role": "measured conductor properties"
+    },
+    {
+      "source_id": "LAB-CHEM",
+      "path": "data/lab_reports/chemistry_assay.csv",
+      "role": "lot chemistry"
+    },
+    {
+      "source_id": "SUP-LOT",
+      "path": "data/supplier/lot_release_register.xlsx",
+      "role": "supplier lot scope"
+    }
+  ]
+}

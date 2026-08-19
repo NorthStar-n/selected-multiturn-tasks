@@ -1,0 +1,32 @@
+{
+  "total_points": 220,
+  "rubrics": [
+    {
+      "name": "Substantive authoritative account model",
+      "weight": 50,
+      "rubric": "A distinct, substantive Excel account model is delivered in /app/output for Dana and Elena. It is the authoritative analytical layer rather than a renamed copy of the checkpoint work package, keeps all account IDs A-1001 through A-1018 visible, and preserves the approved, controlled-exception, and excluded-or-held scope without turning unsupported accounts into customer-facing work.",
+      "criterion": [
+        "The model contains live account-level calculation and decision content for all 18 accounts.",
+        "The 12 approved accounts, four controlled exceptions (A-1013, A-1014, A-1015, A-1017), and two excluded or held accounts (A-1016, A-1018) remain visibly and safely dispositioned."
+      ]
+    },
+    {
+      "name": "Formula-derived cleared and controlled decision carry-through",
+      "weight": 120,
+      "rubric": "The account model carries its decisions into a formula-derived, manager-usable per-account decision layer that is separate from raw or normalized source tables and from the model's detailed calculation register. This may be one all-account Decisions view or mutually exclusive cleared-contact and controlled-decision views. Across the decision layer, all 18 accounts must remain traceable and the account, current decision or communication state, responsible owner or route, supported or blocked action, exception or evidence requirement, and due date or next step must be visible where applicable. A count-only workability summary, the detailed calculation register by itself, or a fixed table containing only the four formal exceptions does not satisfy this carry-through requirement.",
+      "criterion": [
+        "A separate formula-derived account-level decision layer carries the authoritative model's cleared or approved, controlled, and held states into action or communication status.",
+        "Dana and Elena can identify each account's supported or blocked action, owner or route, exception or evidence need, and due date or next step without treating a controlled or held row as customer-releasable."
+      ]
+    },
+    {
+      "name": "Reconciled native Excel control package",
+      "weight": 50,
+      "rubric": "The model uses live formulas tied to visible source or normalized account data for material measures and decisions, visibly reconciles the supplied CRM, ops-case, contact, offer-authority, watchlist, order-and-forecast, and July 15 approval inputs, and remains a professional native Excel control package. Unsupported, over-limit, permission-pending, manager-or-legal-route, and unresolved-evidence actions stay controlled.",
+      "criterion": [
+        "Formula logic, checks, or reconciliation controls make decision inconsistencies and unresolved support visible.",
+        "Manager-facing sheets are populated, legible, and free of visible formula errors, placeholders, generator residue, or contradictory cleared-versus-controlled states."
+      ]
+    }
+  ]
+}

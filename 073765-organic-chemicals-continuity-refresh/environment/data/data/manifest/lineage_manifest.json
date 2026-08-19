@@ -1,0 +1,53 @@
+{
+  "lineage_id": "CAT-GBR-HS29-REFRESH-2023-02",
+  "prepared_at": "2023-02-10T09:30:00Z",
+  "source_releases": [
+    {
+      "record_set": "annual_record_bundle_2015.json",
+      "source_uri": "s3://lh-rl-data-collection-2026/supply_chain/comtrade/uk_hs29_2015.json",
+      "coverage": "GBR HS chapter 29 annual bilateral flows, 2015"
+    },
+    {
+      "record_set": "annual_record_bundle_2016.json",
+      "source_uri": "s3://lh-rl-data-collection-2026/supply_chain/comtrade/uk_hs29_2016.json",
+      "coverage": "GBR HS chapter 29 annual bilateral flows, 2016"
+    },
+    {
+      "record_set": "annual_record_bundle_2017.json",
+      "source_uri": "s3://lh-rl-data-collection-2026/supply_chain/comtrade/uk_hs29_2017.json",
+      "coverage": "GBR HS chapter 29 annual aggregate route views, 2017"
+    },
+    {
+      "record_set": "annual_record_bundle_2019.json",
+      "source_uri": "s3://lh-rl-data-collection-2026/supply_chain/comtrade/uk_hs29_2019.json",
+      "coverage": "GBR HS chapter 29 annual aggregate route views, 2019"
+    },
+    {
+      "record_set": "price_indicator_packet.json",
+      "source_uri": "s3://lh-rl-data-collection-2026/supply_chain/fred/ppi_chemicals.json",
+      "coverage": "quarterly chemical producer price observations"
+    },
+    {
+      "record_set": "context_*.json and *_panel.json",
+      "source_uri": "World Bank and ILO catalog extracts for GBR",
+      "coverage": "macro and labor context used only for documented bridge estimates"
+    },
+    {
+      "record_set": "governed_export_bridge_2018_2022.csv",
+      "source_uri": "internal://MODEL-BRIDGE-23-03/governed_export_bridge_2018_2022",
+      "coverage": "governed bridged GBR HS 29 export values for missing official catalog years, used with the macro-index regression setup"
+    }
+  ],
+  "cross_references": [
+    "REV-MR-22-01",
+    "REV-MR-22-02",
+    "REV-MR-23-03",
+    "FIN-RES-22-118",
+    "CR-2219",
+    "ASN-GBR-773",
+    "PO-2022-10488",
+    "ERP-OC-1042",
+    "MRS-884",
+    "OPS-CAL-2022"
+  ]
+}

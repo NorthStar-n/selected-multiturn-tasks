@@ -1,0 +1,24 @@
+{
+  "document_id": "CFG-QA-CU-0726",
+  "effective_date": "2026-07-01",
+  "unit_conversions": {
+    "resistivity_uohm_cm_to_ohm_m": 1e-08,
+    "millimeter_to_meter": 0.001,
+    "micrometer_to_meter": 1e-06,
+    "ohm_to_milliohm": 1000.0
+  },
+  "temperature_coefficient_resistance_per_c": 0.00393,
+  "reference_temperature_c": 20.0,
+  "risk_score_weights": {
+    "chemical_violation": 40,
+    "electrical_violation": 25,
+    "resistance_margin_under_10_mohm": 15,
+    "documented_exception": 8,
+    "literature_only_property": 5,
+    "catalog_quality_flag": 4
+  },
+  "release_status_thresholds": {
+    "hold_if_score_at_least": 45,
+    "conditional_if_score_at_least": 8
+  }
+}

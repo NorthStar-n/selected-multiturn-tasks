@@ -1,0 +1,46 @@
+name = "parsewave/9885f8-northstar-account-recovery-package"
+artifacts = [ "/app/output",]
+schema_version = "1.2"
+multi_step_reward_strategy = "final"
+
+[task]
+name = "parsewave/9885f8-northstar-account-recovery-package"
+
+[verifier]
+timeout_sec = 2200
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 3600.0
+cpus = 4
+memory_mb = 4096
+storage_mb = 10240
+
+[metadata.multiturn]
+mode = "native_resume"
+session_format = "native_sweagent_traj"
+portable_audit_format = "ATIF-v1.5"
+history_conversion = true
+runtime_adapter = "all_for_one.multiturn.harbor_sweagent_resume:SweAgentResume"
+native_session_path = "conversation/conversation.traj"
+current_user_path = "instruction.md"
+checkpoint_workspace = "/app/task"
+checkpoint_archive_workspace_prefix = ""
+environment_layout = "dual_initial_resume_v1"
+initial_environment_path = "initial"
+initial_environment_sha256 = "44a447dba72d30b51ec72747ad9eb1721efef3b49e9c388133e23382f9b346f5"
+resume_environment_path = "environment"
+source_artifact_paths = [ "/app/output",]
+handoff_required_submission_paths = [ "/app/output",]
+portable_audit_warning = "atif_schema_version_upgrade_deferred: emitted ATIF-v1.5; preferred ATIF-v1.7"
+construction_harness = "codex"
+official_resume_harness = "sweagent"
+trajectory_path = "conversation/conversation.traj"
+sweagent_session_path = "conversation/conversation.traj"
+resume_trajectory_sha256 = "c3a94910ebb618e51b0fd98765d6d239b81fcdeb38556cf87524910cd9b3c22f"
+replay_config_sha256 = "3f5f1ef87c940bcc93bc0fcb8b29634700bbbec1d0cf4bc9ce2a05b89847dc52"
+converter_commit = "9b285839b6ec4c9aadc6234a95f28d1af66f3b3e"
+conversion_mode = "legacy_jsonl"
+

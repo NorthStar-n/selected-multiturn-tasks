@@ -1,0 +1,9 @@
+queue_id,case_id,event_time,reviewer,medication_or_scope,proposed_action,queue_state,revision_status,source_reference,note
+RCQ-7701,CT-2026-0713-18,2026-07-12 06:12,"Nina Patel, CPhT",admission medication-history version ADM-V2,reviewed,closed,approved,ADMEXP-20260712-4419,Admission history ready for pharmacist review.
+RCQ-7714,CT-2026-0713-18,2026-07-13 11:05,"Nina Patel, CPhT",warfarin 5 mg tablet,keep pending discharge,open,preliminary,ADM-0710-002; RXH profile,Preliminary row expires when the final transition summary posts.
+RCQ-7718,CT-2026-0713-18,2026-07-13 13:30,"Nina Patel, CPhT",metoprolol tartrate 50 mg tablet,change expected,open,preliminary,draft discharge discussion,Await final formulation and dose.
+RCQ-7721,CT-2026-0713-18,2026-07-13 13:38,"Owen Laird, PharmD",potassium chloride ER 20 mEq tablet,hold pending lab review,open,preliminary,DCS-MED-007,Lab result not yet available.
+RCQ-7732,CT-2026-0713-18,2026-07-14 08:21,"Owen Laird, PharmD",spironolactone 25 mg tablet,ask prescriber,open,current,RXH-0714-013; portal row,Active profile but not addressed in final transition summary.
+RCQ-7737,CT-2026-0713-18,2026-07-14 08:24,"Owen Laird, PharmD",magnesium oxide 400 mg tablet,ask discharging service,open,current,RXH-0714-038; portal row,"Patient reports active use, final transition summary silent."
+RCQ-7744,CT-2026-0713-18,2026-07-14 15:25,"Owen Laird, PharmD",potassium chloride ER 20 mEq tablet,continue,closed,current,EML-20260714-1510,Prescriber confirmed continuation after BMP resulted.
+RCQ-7751,CT-2026-0713-18,2026-07-14 17:05,"Owen Laird, PharmD",pantoprazole 40 mg tablet,formulary substitution,closed,current,FG-SUB-002; EML-20260714-1142,Use approved outpatient PPI substitution unless discharge prohibits substitution.

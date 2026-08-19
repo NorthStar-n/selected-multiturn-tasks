@@ -1,0 +1,5 @@
+run_id,lot_id,material_id,property,value,unit,temperature_c,pressure_kpa,strain_rate_s_inv,method,condition_tag
+MECH-0726-01,LOT-CU-2607-D,MAT-CU-HBPLATE,yield_strength,219.0,MPa,23.0,101.3,0.001,IIT-AFM,protocol_condition
+MECH-0726-02,LOT-CU-2607-D,MAT-CU-HBPLATE,yield_strength,176.0,MPa,85.0,101.3,0.01,supplier_screen,temperature_accelerated
+MECH-0726-03,LOT-CU-2607-D,MAT-CU-HBPLATE,hardness,0.92,GPa,23.0,101.3,0.001,IIT-AFM,protocol_condition
+MECH-0726-04,LOT-CU-2607-A,MAT-CU-C101,yield_strength,205.0,MPa,23.0,101.3,0.001,tensile_microcoupon,protocol_condition

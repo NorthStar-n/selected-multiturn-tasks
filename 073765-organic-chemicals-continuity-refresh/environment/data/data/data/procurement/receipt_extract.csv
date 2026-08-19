@@ -1,0 +1,11 @@
+receipt_id,po_number,erp_code,receipt_date,qty_kg,status,source_note
+RCPT-7781,PO-2022-10488,ERP-OC-1042,24/12/2022,18500,Received,dock export
+RCPT-7786,PO-2022-10488,ERP-OC-1042,30/12/2022,11750,Received,dock export
+RCPT-7802,PO-2022-10491,ERP-OC-2055,29/12/2022,12000,Received,dock export
+RCPT-7817,PO-2022-10491,ERP-OC-2055,03/01/2023,13000,Received,UK date in dock export
+RCPT-7825,PO-2022-10502,ERP-OC-3188,04/01/2023,9000,Received,dock export
+RCPT-7828,PO-2022-10502,ERP-OC-3188,06/01/2023,4000,Received,dock export
+RCPT-7829,PO-2022-10502,ERP-OC-3188,07/01/2023,-500,Returned ,quality hold reversal
+RCPT-7830,PO-2022-10508,ERP-OC-7710,29/12/2022,15000,Received,dock export
+RCPT-7837,PO-2022-10508,ERP-OC-7710,05/01/2023,12000,Received ,status has export padding
+RCPT-7844,PO-2022-10517,ERP-OC-1042,10/01/2023,22000,Received,dock export

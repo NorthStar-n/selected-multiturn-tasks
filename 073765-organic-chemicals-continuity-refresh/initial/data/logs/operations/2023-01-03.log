@@ -1,0 +1,3 @@
+2023-01-03 07:02:31.111 INFO [feed.monitor] ticket=OPS-ACN-3321 restart_check=scheduled
+2023-01-03 13:22:45.902 WARN [feed.monitor] stream=ACN-3 supplier=Atlas_Nitriles portal_id=ATN-044 throughput_pct=76.5
+2023-01-03 16:48:33.017 INFO [feed.monitor] ticket=OPS-ACN-3321 handoff=planning status=restricted_release

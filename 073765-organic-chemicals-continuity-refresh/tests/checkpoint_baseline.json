@@ -1,0 +1,23 @@
+{
+  "schema_version": "afo.checkpoint-output-baseline.v1",
+  "recording_run_id": "mt-native-build-073765-you-supply-chain-preparing-recurring-048457e5",
+  "checkpoint_sha256": "24574987f8cfa12d634902183ed34d7fa1e6413660476615b9a83fd23c6f3b68",
+  "match_policy": "exact_monitored_office_file_set",
+  "monitored_extensions": [
+    ".docx",
+    ".pdf",
+    ".pptx",
+    ".xlsx"
+  ],
+  "files": {
+    "weekly_planning_numeric_analysis.xlsx": {
+      "bytes": 21878,
+      "sha256": "10115f017d26c3f16dd408601b9c0d2f563013b565674893fb86fb0ce9546e82"
+    },
+    "weekly_planning_review_register.xlsx": {
+      "bytes": 146806,
+      "sha256": "b0cec1a7116a722846c138e7c7a48530932edc06821c91a9e31ca5aa3c353298"
+    }
+  },
+  "reason": "The final user turn requires five finished, canonically named deliverables. This manifest identifies only the exact untouched checkpoint output so a resumed no-op receives zero without gating changed or additional work."
+}

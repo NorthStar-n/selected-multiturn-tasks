@@ -1,0 +1,24 @@
+From: Hannah Lee <hannah.lee@applied-materials-lab.com>
+To: Olivia Grant <olivia.grant@applied-materials-lab.com>,
+ Marco Ramos <marco.ramos@applied-materials-lab.com>
+Cc: Dr. Lena Ortiz <lena.ortiz@applied-materials-lab.com>
+Subject: July HB trace window for copper review
+Date: Thu, 02 Jul 2026 09:18:44 -0700
+Message-ID: <20260702091844.hb-window@applied-materials-lab.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Olivia,
+
+For the July HB lots, use 85 C as the steady-state service temperature for th=
+e resistance check. The firmware team kept the same 50 mm verification line b=
+ecause it still matches TRACE-HB-225 in the stack extract.
+
+The review meeting only needs one number for the trace margin, but please kee=
+p the lab resistivity, geometry, thickness, and temperature sources visible s=
+o nobody reuses the room-temperature shortcut.
+
+Hannah Lee
+Electrical Integration
++1 503 555 0184

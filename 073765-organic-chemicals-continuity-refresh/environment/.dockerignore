@@ -1,0 +1,6 @@
+!data/
+!data/**
+!.afo-source-context/data/
+!.afo-source-context/data/**
+!data/.git-checkpoint/
+!data/.git-checkpoint/**

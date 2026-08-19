@@ -1,0 +1,39 @@
+name = "parsewave/791dd4-customer-order-reconciliation"
+schema_version = "1.2"
+multi_step_reward_strategy = "final"
+
+[task]
+name = "parsewave/791dd4-customer-order-reconciliation"
+
+[verifier]
+timeout_sec = 2200
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 4
+memory_mb = 4096
+storage_mb = 10240
+
+[metadata.multiturn]
+mode = "native_resume"
+construction_harness = "codex"
+official_resume_harness = "sweagent"
+session_format = "native_sweagent_traj"
+portable_audit_format = "ATIF-v1.5"
+history_conversion = true
+runtime_adapter = "all_for_one.multiturn.harbor_sweagent_resume:SweAgentResume"
+trajectory_path = "conversation/conversation.traj"
+native_session_path = "conversation/conversation.traj"
+sweagent_session_path = "conversation/conversation.traj"
+current_user_path = "instruction.md"
+resume_trajectory_sha256 = "3d2a3d11396d491a47e46b87c849aed7d56ce9b8affaf60787ef0a473d5aca30"
+initial_environment_sha256 = "3a853c21bbd18aaad56580f95b42d84097ec35ece869cee89c41f1d0ac347bef"
+replay_config_sha256 = "09326da09d61e424047a5bc0b7496c404bb2202693aea8110bc4b635aa6ed09a"
+environment_layout = "dual_initial_resume_v1"
+initial_environment_path = "initial"
+resume_environment_path = "environment"
+converter_commit = "9b285839b6ec4c9aadc6234a95f28d1af66f3b3e"
+conversion_mode = "legacy_jsonl"

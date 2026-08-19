@@ -1,0 +1,80 @@
+{
+  "schema_version": "afo.verifier-provenance.v1",
+  "source": {
+    "repository": "Parsewave-internal/long-horizon-final",
+    "pull_request": 941,
+    "task": "073765-you-supply-chain-preparing-recurring",
+    "commit": "5564f00ab34c6466bedd7ed63da4c37d85655eaf",
+    "rubrics_sha256": "7daeeb12f843ab221d15a5f8ef10a64a78508eb43d97b9b35884c3fd44a271e9",
+    "test_outputs_sha256": "8bfc2a49623782ac38e1b6523e8d009a14aedc599880b8ffc0287ef6fe755e36",
+    "test_utils_sha256": "00449a300ba0d62e1ce7ae401f26ffc0caa4ee9004eb010df2d4ca2d155f7651",
+    "test_sh_sha256": "04e4ddccfdc8ad07faaa00330350a578562d55a1031da43ebf07f457ee1e690a"
+  },
+  "revision": {
+    "reason": "Remove or narrow requirements that were not inferable from the multiturn conversation or resumed workspace while retaining meaningful package-level scoring.",
+    "removed_criteria": [
+      "trend_decomposition_explicit_values",
+      "shortcut_sensitivity_numeric_rejections"
+    ],
+    "generalized_scope": [
+      "source_evidence_anchor_register",
+      "entity_resolver_erp_stable_key",
+      "covid_bridge_recovery_values",
+      "forecast_bridge_values_and_method",
+      "po_netting_dirty_receipts_contract",
+      "cross_artifact_dependency_handoff"
+    ],
+    "rescore_followup": {
+      "trigger_commit": "149c8d35d84f588f90166f93dcb4480d5c3cbdef",
+      "observed_oracle_reward": 0.8,
+      "observed_nop_reward": 0.5,
+      "status": "superseded_after_exact_worksheet_requirements_distorted_retained_scores",
+      "changes": [
+        "Require the canonical final filenames disclosed by the final user turn for each applicable criterion, so differently named checkpoint drafts do not count as submitted finals.",
+        "Remove a trade-partner-to-ERP linkage and a 2019-import placement requirement that the unchanged golden deliverables do not contain.",
+        "Treat the golden macro_bridge status as the explicit official-versus-modeled distinction.",
+        "Allow the 12 percent reserve evidence to be read from decision_memo.docx together with the calendar and exposure rows in continuity_exposure.xlsx."
+      ],
+      "expected_nop_reward": 0.0
+    },
+    "retained_rescore_followup": {
+      "trigger_commit": "cf5b263ac8efb0e05aad8f4fbf6004419e415e1e",
+      "rescore_id": "2f46c9f5ef163f5a857c32a0ad5d8f47a78ce5ee8234f424638a07a5d4ab5e2f",
+      "observed_resume_rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.1
+      ],
+      "observed_oracle_reward": 0.7,
+      "observed_nop_reward": 0.0,
+      "diagnosis": "Nine binary criteria named golden-specific worksheets that were not required by the conversation. Retained outputs used semantically equivalent worksheet layouts and contained substantial correct work, so the score collapse was artificial.",
+      "correction": [
+        "Remove every worksheet, slide, and section naming requirement and grade equivalent evidence semantically.",
+        "Keep only the five canonical output filenames explicitly required by the final user turn.",
+        "Detect the exact unchanged checkpoint output with a frozen byte-level manifest before invoking the preserved semantic judge."
+      ]
+    },
+    "verifier_wrapper": {
+      "scope": "Exact checkpoint no-op detection only; all changed or additional Office output continues through the original LLM judge and revised semantic rubric.",
+      "source_judge_preserved": true,
+      "test_utils_byte_identical_to_source": true,
+      "test_sh_byte_identical_to_source": true,
+      "checkpoint_baseline_sha256": "290be022c4b9c9ee8c5dcf7cd73229c1f2199af49e02320de10d0146f5183bf4",
+      "checkpoint_noop_sha256": "53f0e442c6d5baaa7672abc049e744629ed20d0accd18641a30bce0f732daf06",
+      "wrapped_test_outputs_sha256": "70a20f61b94d698504087b876e470a79e02b62d6c3168a631cd446b09015558c",
+      "expected_exact_checkpoint_reward": 0.0,
+      "frozen_before_next_rescore": true
+    },
+    "solution_changed": false,
+    "expected_oracle_reward": 1.0,
+    "revised_rubrics_sha256": "6b509b5c2fecf680149e6083dbd760d0b10231d7b90ee9cbd75da5fa1641993b",
+    "oracle_validation": {
+      "method": "Static criterion-to-artifact contract audit against the unchanged committed solution files",
+      "result": "pass",
+      "criterion_groups": 10,
+      "live_llm_judge_executed": false,
+      "note": "The local environment has no LLM_JUDGE_API_KEY or XAI_API_KEY; all revised criterion facts were verified in the golden OOXML artifacts."
+    }
+  }
+}

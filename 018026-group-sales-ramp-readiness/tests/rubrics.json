@@ -1,0 +1,226 @@
+{
+  "rubric_format": "jobbench_binary_v1",
+  "total_points": 220,
+  "rubrics": [
+    {
+      "name": "complete_cohort_population_reconciled",
+      "weight": 10,
+      "rubric": "The outputs carry the complete July cohort through the readiness package.",
+      "criterion": [
+        "All ten Rep_IDs REP-2701 through REP-2710 are present in the playbook appendix, schedule workbook, certification register, and coverage model.",
+        "Representative names, supervisors, segments, target certification dates, and target independent coverage dates match the July intake evidence.",
+        "No representative is dropped because they are blocked, pending, or not yet ready."
+      ]
+    },
+    {
+      "name": "competency_requirements_applied",
+      "weight": 10,
+      "rubric": "The certification evidence is checked against the governed competency standard.",
+      "criterion": [
+        "The register applies all seven competencies GS-C01 through GS-C07 to every representative, for 70 representative-competency rows.",
+        "Minimum rules are applied consistently: GS-C01 85, GS-C02 88, GS-C03 90, GS-C05 95, GS-C06 85, GS-C07 90 plus signoff, and GS-C04 pass with no critical miss.",
+        "Assessment, observation, CRM, coaching, and exception evidence are traceable to the supplied exports rather than summarized without row-level references."
+      ]
+    },
+    {
+      "name": "readiness_dispositions_correct",
+      "weight": 10,
+      "rubric": "The package derives the current readiness mix correctly.",
+      "criterion": [
+        "The readiness summary shows exactly 3 ready-pending-manager representatives: REP-2701, REP-2707, and REP-2710.",
+        "It shows exactly 1 approved limited-exception representative, REP-2702, and does not treat that exception as full independent coverage approval.",
+        "It shows REP-2703 and REP-2705 as remediation required, REP-2706 and REP-2709 as pending evidence, and REP-2704 and REP-2708 as blocked by unresolved exception."
+      ]
+    },
+    {
+      "name": "pending_approval_state_preserved",
+      "weight": 10,
+      "rubric": "The outputs remain an approval-ready request, not an execution notice.",
+      "criterion": [
+        "The playbook and all workbooks identify HB-RAMP-2026-07 as pending desk manager approval.",
+        "No output states that independent customer coverage has already been approved for any representative.",
+        "Rows with existing evidence approval, such as REP-2702's limited exception, remain distinguishable from rows that only have staged or proposed actions."
+      ]
+    },
+    {
+      "name": "limited_exception_handled_correctly",
+      "weight": 10,
+      "rubric": "The approved limited exception is used only within its evidence boundary.",
+      "criterion": [
+        "REP-2702 is allowed only for staged supervised low-risk affinity coverage until the 2026-07-20 live observation closes.",
+        "The coverage model does not allocate high-risk or independent coverage to REP-2702.",
+        "The register and playbook retain the GS-C07 evidence gap and the EX-LIM-2702 approval note together."
+      ]
+    },
+    {
+      "name": "schedule_remaining_work_feasible",
+      "weight": 10,
+      "rubric": "The training and observation schedule resolves remaining work without violating visible constraints.",
+      "criterion": [
+        "The schedule includes Priya's CRM remediation and retest on 2026-07-16, Sofia's contract remediation on 2026-07-16 and retest on 2026-07-17, Liam's live observation on 2026-07-17, Isabella's supervisor panel on 2026-07-17, and Jordan's live observation on 2026-07-20. It also carries Noah's compliance remediation and retest path without hiding whether the visible constraints allow a compliant slot.",
+        "Scheduled events respect trainer qualifications, visible availability windows, and stated buffer rules.",
+        "No scheduled trainer-date booking exceeds the supplied capacity slots."
+      ]
+    },
+    {
+      "name": "schedule_blackouts_and_exclusions_respected",
+      "weight": 10,
+      "rubric": "The schedule preserves blocked and unavailable states rather than forcing them into infeasible slots.",
+      "criterion": [
+        "No live observation is scheduled with TRN-505 during the 2026-07-17 13:00-17:00 QA calibration blackout.",
+        "No compliance event is scheduled with TRN-504 on 2026-07-20 during the privacy audit blackout.",
+        "REP-2704 remains unscheduled for certification closure until the licensing hold is cleared, with compliance as owner and 2026-07-22 as due date."
+      ]
+    },
+    {
+      "name": "register_exceptions_complete",
+      "weight": 10,
+      "rubric": "The certification register preserves every material exception and next action.",
+      "criterion": [
+        "The exception view includes EX-LIM-2702, EX-REM-2703, EX-LIC-2704, EX-CRM-2705, EX-LIVE-2706, EX-COMP-2708, and EX-PANEL-2709.",
+        "Each exception has a reason, approval state, owner, next action, opened date, and due date.",
+        "Unresolved exceptions for REP-2704 and REP-2708 are not converted into ready, scheduled-ready, or handoff-ready statuses."
+      ]
+    },
+    {
+      "name": "coverage_allocation_counts_correct",
+      "weight": 10,
+      "rubric": "The coverage model produces the correct staged disposition for every active account.",
+      "criterion": [
+        "Across 16 active accounts, the model shows 5 staged eligible handoffs, 2 staged limited supervised assignments, 6 remaining under temporary coverage, and 3 escalations to supervisors.",
+        "Every Account_ID ACC-1001 through ACC-1016 has exactly one coverage disposition.",
+        "The allocation statuses are formula-driven or otherwise traceable to readiness status and risk band evidence."
+      ]
+    },
+    {
+      "name": "coverage_dependency_blocks_unready_reps",
+      "weight": 10,
+      "rubric": "Account handoffs obey readiness and exception dependencies.",
+      "criterion": [
+        "Accounts proposed for REP-2703, REP-2705, REP-2706, and REP-2709 remain under temporary coverage while remediation or pending evidence remains open.",
+        "Accounts proposed for REP-2704 and REP-2708 are escalated because of unresolved licensing or compliance blockers.",
+        "No account is staged as an independent eligible handoff to a representative who is remediation-required, pending evidence, or blocked."
+      ]
+    },
+    {
+      "name": "account_continuity_preserved",
+      "weight": 10,
+      "rubric": "The coverage plan protects customer commitments during pending approval.",
+      "criterion": [
+        "Every account row carries the current temporary owner, proposed rep, service deadline, customer action due, risk band, quoted value, and margin estimate.",
+        "High-risk or deadline-sensitive accounts ACC-1004, ACC-1010, and ACC-1013 have named supervisor escalation ownership and next actions.",
+        "Owner load analysis flags that SUP-410 retains 4 accounts against a capacity limit of 3 after staged handoffs."
+      ]
+    },
+    {
+      "name": "coverage_financial_totals_reconcile",
+      "weight": 10,
+      "rubric": "The model reconciles quoted value and margin exposure from the account source.",
+      "criterion": [
+        "Total quoted value across the account population reconciles to USD 1,942,000.",
+        "Quoted value remaining in temporary coverage plus supervisor escalation after applying the limited-exception scenario reconciles to USD 1,346,000.",
+        "Financial exposure is traceable to row-level account dispositions and clearly distinguishes value proposed for staged handoff from value retained under temporary coverage or supervisor escalation rather than presenting one unexplained hardcoded total."
+      ]
+    },
+    {
+      "name": "playbook_operating_logic_complete",
+      "weight": 10,
+      "rubric": "The playbook gives supervisors a usable governed workflow.",
+      "criterion": [
+        "The playbook includes entry criteria, RACI ownership, decision points, exception routes, escalation paths, and staged handoff checklist fields.",
+        "Its process-flow diagram reflects intake, curriculum, supervised practice, evidence review, remediation, approved limited exception, temporary coverage continuation, and pending manager handoff.",
+        "The representative-specific appendix carries every representative's readiness status and next action, while open-evidence ownership, due dates, and coverage restrictions are available in the playbook's exception and control sections or the linked companion deliverables."
+      ]
+    },
+    {
+      "name": "cross_deliverable_status_consistency",
+      "weight": 10,
+      "rubric": "The four deliverables use the same status and date facts.",
+      "criterion": [
+        "Readiness statuses in the playbook appendix match the certification register and the coverage model.",
+        "Schedule dates for remaining evidence items match the next actions and due dates in the register.",
+        "Coverage restrictions in the playbook match allocation statuses in the coverage model."
+      ]
+    },
+    {
+      "name": "formula_and_check_lineage_present",
+      "weight": 10,
+      "rubric": "Decision-critical calculations are supported by workbook formulas and check sheets.",
+      "criterion": [
+        "The schedule workbook uses formulas for duration, capacity, booked slots, conflict flags, and schedule control totals.",
+        "The certification register uses formulas for complete counts, evidence percentages, readiness status, and cohort reconciliation checks.",
+        "The coverage model uses formulas for readiness lookup, handoff eligibility, allocation status, risk score, staged-versus-retained value totals, and account control checks."
+      ]
+    },
+    {
+      "name": "professional_style_docx_native_rendering",
+      "weight": 10,
+      "rubric": "The Word playbook is a readable native DOCX.",
+      "criterion": [
+        "The DOCX opens and renders without blank pages, clipped text, broken glyphs, or overlapping content.",
+        "It uses semantic headings, an automatic contents element, headers or footers, and native editable tables rather than screenshots of text.",
+        "Document properties contain realistic HarborBridge title, subject, authoring role, and operational keywords."
+      ]
+    },
+    {
+      "name": "professional_style_docx_tables_and_diagrams",
+      "weight": 10,
+      "rubric": "The Word tables and process diagram are usable in rendered and native form.",
+      "criterion": [
+        "RACI, decision, appendix, and checklist tables have readable column widths, high-contrast repeated headers, and row-level content that does not spill outside cells.",
+        "The process-flow diagram is embedded in the DOCX as an editable table or Office object with clear lanes and exception branches.",
+        "Captions or source notes keep the diagram tied to the evidence instead of floating as decoration."
+      ]
+    },
+    {
+      "name": "professional_style_schedule_xlsx_native_execution",
+      "weight": 10,
+      "rubric": "The schedule workbook behaves like a native scheduling packet.",
+      "criterion": [
+        "Date, time, duration, capacity, and status fields use native Excel data types and formats rather than display-only text.",
+        "Tables have filters, frozen headings, validation lists where useful, conditional formatting for conflicts or risk, and no visible formula errors.",
+        "The opening control or summary view makes schedule feasibility, conflicts, exclusions, owners, and due dates reviewable from live row-level records. Charts are optional and, when used, are tied to live worksheet ranges."
+      ]
+    },
+    {
+      "name": "professional_style_register_xlsx_native_execution",
+      "weight": 10,
+      "rubric": "The certification register is a controlled workbook.",
+      "criterion": [
+        "The register exposes row-level representative-competency records with stable IDs, filters, frozen panes, validation lists, and controlled status fields.",
+        "Summary and check sheets remain visible, readable, and free of formula errors.",
+        "Readiness, gaps, exception aging, and evidence completeness are summarized from live row-level data. Charts are optional and, when used, use live ranges."
+      ]
+    },
+    {
+      "name": "professional_style_coverage_xlsx_native_execution",
+      "weight": 10,
+      "rubric": "The coverage model is organized as a native analytical workbook.",
+      "criterion": [
+        "The workbook separates source records, allocation logic, capacity and priority analysis, checks, and decision summaries clearly enough to trace each disposition back to its inputs.",
+        "Currency, percentages, dates, and counts use native numeric formats and readable precision.",
+        "Allocation, value-at-risk, deadlines, capacity, and risk are summarized from visible live ranges. Charts are optional and, when used, remain bound to those ranges."
+      ]
+    },
+    {
+      "name": "professional_style_visuals_are_evidence_based",
+      "weight": 10,
+      "rubric": "The required visuals clarify the operational decision.",
+      "criterion": [
+        "The required DOCX process diagram and workbook control or summary views each answer a specific readiness, scheduling, exception, or coverage question.",
+        "Any charts have readable titles, axes or legends, units or counts, and no redundant decorative duplicates.",
+        "Visuals do not introduce unsupported categories or values absent from the source room."
+      ]
+    },
+    {
+      "name": "professional_style_template_and_metadata_scrubbed",
+      "weight": 10,
+      "rubric": "The package contains no builder or template residue.",
+      "criterion": [
+        "Visible text and native metadata use business-facing HarborBridge language and do not expose irrelevant implementation or generation details.",
+        "No unused sample sheets, sample ranges, placeholder text, comments, or hidden template content remains in the deliverables.",
+        "The four output files use consistent HarborBridge naming, dates, pending-state language, and document control details."
+      ]
+    }
+  ]
+}

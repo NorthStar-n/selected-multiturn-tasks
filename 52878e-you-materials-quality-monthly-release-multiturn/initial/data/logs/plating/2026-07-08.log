@@ -1,0 +1,6 @@
+2026-07-08 20:59:43.104 INFO [plating.metrology] gauge=XR-17 calibration_check=PASS operator=MChou
+2026-07-08 21:06:12.488 INFO [plating.metrology] panel=HB-0726-CU02 lot=LOT-CU-2607-C trace_id=TRACE-HB-205 avg_thickness_um=18.4 n=12 gauge=XR-17
+2026-07-08 21:14:17.482 INFO [plating.metrology] panel=HB-0726-CU04 lot=LOT-CU-2607-D trace_id=TRACE-HB-225 avg_thickness_um=17.8 n=12 gauge=XR-17
+2026-07-08 21:19:32.915 WARN [plating.metrology] panel=HB-0726-CU04 edge_site=E11 thickness_um=17.1 below_local_watch gauge=XR-17
+2026-07-08 21:25:51.078 INFO [plating.metrology] panel=HB-0726-CU04 lot=LOT-CU-2607-D trace_id=TRACE-HB-225 rerun_avg_thickness_um=17.8 n=12 gauge=XR-17
+2026-07-08 21:31:07.611 INFO [plating.metrology] upload_batch=XR17-20260708-04 status=COMMITTED rows=24

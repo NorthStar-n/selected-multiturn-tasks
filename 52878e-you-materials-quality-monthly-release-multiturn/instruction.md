@@ -1,0 +1,5 @@
+The review note isn't the incident review I need Finish qualification_readout.pptx with the source-coverage map release status distribution, top-ranked findings and exception handling It also needs the reaction-pathway or off-spec-rate view and rejected catalog or literature decoys all using the model's IDs and values. use a documented alignment grid with consistent margins gutters and baselines so nothing overlaps or clips.
+
+Then create risk_assessment.docx from those top findings. Cover summary impact, timestamped timeline contributing factors response and a corrective-action register. State release or hold evidence basis, owners and due timing, with closure criteria. Editable tables and semantic headings plus useful captions or cross-references, headers and footers and controlled page breaks.
+
+Across all four files keep status colors risk IDs totals and recommendations consistent. Add native metadata for the copper-conductor sector and intended release-meeting or incident-review use, plus template or context ID where applicable and replacement status, without hidden answers or internal build paths Put the whole package under /app/output/

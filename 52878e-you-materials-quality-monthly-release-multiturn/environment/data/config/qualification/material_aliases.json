@@ -1,0 +1,23 @@
+{
+  "document_id": "ALIAS-CU-0726",
+  "current_formula_convention": "Stoichiometric formula with IUPAC oxidation state in parentheses when needed.",
+  "legacy_supplier_notation": {
+    "Cu^1O": {
+      "canonical_material_id": "MAT-CU2O-CUPRITE",
+      "canonical_formula": "Cu2O",
+      "interpretation": "monovalent copper oxide, cuprite; the superscript is an oxidation-state marker, not a stoichiometric subscript"
+    },
+    "Cu^2O": {
+      "canonical_material_id": "MAT-CUO-TENORITE",
+      "canonical_formula": "CuO",
+      "interpretation": "divalent copper oxide, tenorite; supplier shorthand omits the current formula convention"
+    }
+  },
+  "supplier_aliases": {
+    "C10100 OFHC": "MAT-CU-C101",
+    "E-Cu58": "MAT-CU-WIRE",
+    "HB electro-Cu": "MAT-CU-HBPLATE",
+    "eta-tin copper": "MAT-CU3SN-ETA",
+    "cupric sulfate": "MAT-CUSO4-CUPRIC"
+  }
+}

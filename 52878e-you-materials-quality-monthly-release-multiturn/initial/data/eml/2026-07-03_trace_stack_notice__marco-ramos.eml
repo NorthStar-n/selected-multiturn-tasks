@@ -1,0 +1,27 @@
+From: Marco Ramos <marco.ramos@applied-materials-lab.com>
+To: Meredith Chen <meredith.chen@applied-materials-lab.com>,
+ Olivia Grant <olivia.grant@applied-materials-lab.com>
+Cc: Hannah Lee <hannah.lee@applied-materials-lab.com>
+Subject: Re: CCP-CU-180 July source alignment
+Date: Fri, 03 Jul 2026 13:42:08 -0700
+Message-ID: <20260703134208.ccp-align@applied-materials-lab.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Meredith,
+
+Rev. 2 of CCP-CU-180 supersedes Rev. 1 for E-1 and E-2 as of 2026-07-01. Do n=
+ot carry forward the 170 mOhm pilot limit into the July package.
+
+PCN-HB-044 Rev. C is narrower. It changes only the HB finished copper thickne=
+ss floor after XR-17 correlation and leaves the 160 mOhm electrical limit alo=
+ne.
+
+Marco Ramos
+Process Integration Manager
++1 503 555 0198
+
+> On Fri, 03 Jul 2026 at 11:09, Meredith Chen wrote:
+> Are we treating the 18.0 um line as a hold point for HB-RDL after the gauge=
+ service?

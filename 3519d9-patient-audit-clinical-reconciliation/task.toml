@@ -1,0 +1,41 @@
+name = "parsewave/3519d9-patient-audit-clinical-reconciliation"
+artifacts = [ "/app/output",]
+schema_version = "1.2"
+multi_step_reward_strategy = "final"
+
+[task]
+name = "parsewave/3519d9-patient-audit-clinical-reconciliation"
+
+[verifier]
+timeout_sec = 2200
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 4
+memory_mb = 4096
+storage_mb = 10240
+
+[metadata.multiturn]
+checkpoint_workspace = "/app/task"
+mode = "native_resume"
+construction_harness = "codex"
+official_resume_harness = "sweagent"
+session_format = "native_sweagent_traj"
+portable_audit_format = "ATIF-v1.5"
+history_conversion = true
+runtime_adapter = "all_for_one.multiturn.harbor_sweagent_resume:SweAgentResume"
+trajectory_path = "conversation/conversation.traj"
+native_session_path = "conversation/conversation.traj"
+sweagent_session_path = "conversation/conversation.traj"
+current_user_path = "instruction.md"
+resume_trajectory_sha256 = "7fd83e68b946eea9685fb56b2d422bcaf099d202a26781c81b68b99ba3094c40"
+initial_environment_sha256 = "28e360676b29c486aad04fc17e849ab4dd75a673a84359d399916ddc32f7b41e"
+replay_config_sha256 = "cf5592b1e1351e81bfcce831f1b7a4a691741b45668e53b4b7e010450f1a2fb3"
+environment_layout = "dual_initial_resume_v1"
+initial_environment_path = "initial"
+resume_environment_path = "environment"
+converter_commit = "9b285839b6ec4c9aadc6234a95f28d1af66f3b3e"
+conversion_mode = "legacy_jsonl"

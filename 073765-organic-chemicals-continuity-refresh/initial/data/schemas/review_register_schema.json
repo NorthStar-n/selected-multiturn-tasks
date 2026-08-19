@@ -1,0 +1,25 @@
+{
+  "schema_id": "SCHEMA-SOURCE-REGISTER-23-02",
+  "record_population_fields": [
+    "record_id",
+    "source_release",
+    "ref_year",
+    "flow_code",
+    "partner_code",
+    "partner2_code",
+    "mot_code",
+    "primary_value",
+    "inclusion_status",
+    "governing_rule"
+  ],
+  "risk_register_fields": [
+    "risk_id",
+    "erp_code",
+    "po_number",
+    "open_qty_kg",
+    "tier3_source",
+    "risk_adjusted_exposure_gbp",
+    "action_status",
+    "exception_document_id"
+  ]
+}

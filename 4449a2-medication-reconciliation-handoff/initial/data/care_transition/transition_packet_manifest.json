@@ -1,0 +1,58 @@
+{
+  "packet_id": "PKT-CT-744201-20260715",
+  "case_id": "CT-2026-0713-18",
+  "patient_label": "Mara Ellison",
+  "reconciliation_date": "2026-07-15",
+  "care_transition_period": "2026-07-10 through 2026-07-15",
+  "scope_note": "Retain medication and allergy records for CT-2026-0713-18; rows for CT-2026-0713-19 are same-batch export rows outside the index transition.",
+  "source_register": [
+    {
+      "relative_path": "admission_history_snapshot.xlsx",
+      "source_system": "Ambulatory EHR medication history",
+      "exported_at": "2026-07-12 06:05",
+      "purpose": "Admission and nurse-reviewed home medication history."
+    },
+    {
+      "relative_path": "patient_list_snapshot.xlsx",
+      "source_system": "Patient portal",
+      "exported_at": "2026-07-13 09:15",
+      "purpose": "Self-maintained patient medication list and duplicate patient-entered rows."
+    },
+    {
+      "relative_path": "pharmacy_profile_snapshot.xlsx",
+      "source_system": "Outpatient pharmacy profile",
+      "exported_at": "2026-07-14 22:20",
+      "purpose": "Active, inactive, ready-to-fill, and dispense history rows."
+    },
+    {
+      "relative_path": "allergy_status_extract.csv",
+      "source_system": "Allergy verification extract",
+      "exported_at": "2026-07-14 21:55",
+      "purpose": "Active and superseded allergy facts for reconciliation."
+    },
+    {
+      "relative_path": "reconciliation_status_extract.csv",
+      "source_system": "Medication reconciliation queue",
+      "exported_at": "2026-07-14 22:05",
+      "purpose": "Workflow statuses and revision states."
+    },
+    {
+      "relative_path": "transition_summary.docx",
+      "source_system": "Final care-transition summary",
+      "exported_at": "2026-07-13 16:44",
+      "purpose": "Final signed discharge medication instructions."
+    },
+    {
+      "relative_path": "formulary_reference.docx",
+      "source_system": "Controlled pharmacy operations reference",
+      "exported_at": "2026-07-01 08:00",
+      "purpose": "Authority, substitution, and safety-boundary rules."
+    },
+    {
+      "relative_path": "clarification_thread_july.eml",
+      "source_system": "Prescriber clarification email",
+      "exported_at": "2026-07-14 15:10",
+      "purpose": "Post-discharge clarification for unresolved medication rows."
+    }
+  ]
+}

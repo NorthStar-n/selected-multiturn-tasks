@@ -1,0 +1,11 @@
+measurement_id,lot_id,material_id,property,reported_value,calibration_delta,accepted_value,unit,temperature_c,pressure_kpa,strain_rate_s_inv,record_status,instrument_id
+LR-COND-0726-01,LOT-CU-2607-A,MAT-CU-C101,electrical_conductivity_iacs,101.52,0.0,101.52,percent_IACS,23.0,101.3,0.001,measured,LM-CU-07
+LR-COND-0726-02,LOT-CU-2607-A,MAT-CU-C101,resistivity_20c,1.699,0.0,1.699,uohm_cm,20.0,101.3,0.001,measured,LM-CU-07
+LR-COND-0726-03,LOT-CU-2607-B,MAT-CU-WIRE,electrical_conductivity_iacs,100.94,0.0,100.94,percent_IACS,23.0,101.3,0.001,measured,LM-CU-07
+LR-COND-0726-04,LOT-CU-2607-C,MAT-CU-HBPLATE,electrical_conductivity_iacs,101.08,-0.18,100.9,percent_IACS,23.0,101.3,0.001,measured,LM-CU-07
+LR-COND-0726-04D,LOT-CU-2607-C,MAT-CU-HBPLATE,electrical_conductivity_iacs,101.08,-0.18,100.9,percent_IACS,23.0,101.3,0.001,duplicate_sync,LM-CU-07
+LR-COND-0726-05,LOT-CU-2607-D,MAT-CU-HBPLATE,electrical_conductivity_iacs,97.85,0.0,97.85,percent_IACS,23.0,101.3,0.001,measured,LM-CU-07
+LR-COND-0726-06,LOT-CU-2607-D,MAT-CU-HBPLATE,resistivity_20c,1.762,0.0,1.762,uohm_cm,20.0,101.3,0.001,measured,LM-CU-07
+LR-COND-0726-07,LOT-CU-2607-E,MAT-CU3SN-ETA,electrical_conductivity_iacs,68.4,0.0,68.4,percent_IACS,23.0,101.3,0.001,interface_coupon,LM-CU-07
+LR-THERM-0726-01,LOT-CU-2607-A,MAT-CU-C101,thermal_conductivity,392.6,0.0,392.6,W_mK,23.0,101.3,0.001,measured,LM-CU-07
+LR-THERM-0726-02,LOT-CU-2607-D,MAT-CU-HBPLATE,thermal_conductivity,386.8,0.0,386.8,W_mK,23.0,101.3,0.001,measured,LM-CU-07

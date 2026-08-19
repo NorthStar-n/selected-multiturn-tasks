@@ -1,0 +1,127 @@
+{
+  "rubric_format": "jobbench_binary_v1",
+  "total_points": 100,
+  "rubrics": [
+    {
+      "name": "required_role_equivalent_deliverables",
+      "weight": 8,
+      "rubric": "The submission provides the complete role-equivalent output package requested by the visible instruction, without depending on exact golden filenames.",
+      "criterion": [
+        "The /app/output package contains parseable, non-empty deliverables covering all six requested roles: messy-vs-master correction, updated revenue reconciliation/lab audit, emergency physician schedule, medical clearance communication, integrated executive master, and explanatory file/report.",
+        "The deliverables use allowed output file types and are inspectable by the judge; equivalent filenames, extra helper files, and harmless ordering differences are acceptable.",
+        "Do not award this item if a major requested role is absent, such as no integrated executive master or no explanatory report."
+      ]
+    },
+    {
+      "name": "full_messy_master_population_reconciliation",
+      "weight": 8,
+      "rubric": "The identity correction deliverable reconciles the full public patient population from the messy file against the master file at patient level.",
+      "criterion": [
+        "It covers all 100 Guest IDs VIP-801 through VIP-900 by joining on Guest ID, not a sample or aggregate-only summary.",
+        "For each patient, it exposes the messy/input and master/correct values for legal name, VIP level, and allergy or an equivalent side-by-side audit structure.",
+        "It includes exact visible sample corrections such as VIP-804 A. Burr to Aaron Burr and Gold to Silver, VIP-810 Jim Madison/Bronze/Bean products to James Madison/Gold/Soy, and VIP-823 Andy Jackson to Andrew Jackson with Gold VIP level."
+      ]
+    },
+    {
+      "name": "identity_source_precedence_and_error_counts",
+      "weight": 8,
+      "rubric": "The reconciliation treats the master workbook as authoritative and reports the exact public discrepancy counts.",
+      "criterion": [
+        "It clearly states or demonstrates that Master data file.xlsx is the source of truth over Messy data file.xlsx for legal name, VIP level, and verified allergy.",
+        "It reports 100 reviewed patients and the exact discrepancy counts derived from the visible workbooks: 88 legal-name errors, 99 VIP-level errors, and 15 allergy documentation errors.",
+        "It does not undercount allergy discrepancies by treating master None/N/A/no-issue values as blanks or by omitting VIP-801 or VIP-807 from the allergy correction accounting."
+      ]
+    },
+    {
+      "name": "verified_allergy_edge_case_normalization",
+      "weight": 9,
+      "rubric": "The submission correctly normalizes clinically important allergy values and no-allergy edge cases from the master file.",
+      "criterion": [
+        "It includes the severe allergy corrections VIP-802 Severe: Peanuts, VIP-805 Severe: Shellfish, VIP-811 Severe: Latex, VIP-815 Severe: Penicillin, VIP-817 Severe: Bee Stings, VIP-832 Severe: Sulfa Drugs, VIP-841 Severe: Animal Dander, and VIP-879 Severe: Radiation/Iodine.",
+        "It represents master no-allergy cases such as VIP-801, VIP-807, VIP-823, and VIP-880 as None, No known allergy, or an equivalent explicit no-allergy value, not as an empty cell that loses the verified allergy value.",
+        "The same allergy values are propagated into downstream clinical artifacts when those patients appear in emergency, clearance, or integrated-master outputs."
+      ]
+    },
+    {
+      "name": "package_cost_source_and_menu_decoy_handling",
+      "weight": 8,
+      "rubric": "The financial phase uses the medical testing menu for unit costs while rejecting the menu's stale package-count summary as the audit population.",
+      "criterion": [
+        "It uses the visible unit costs Gold = 5000, Silver = 2500, and Bronze = 1000 from Medical testing menu.xlsx.",
+        "It recomputes the correct package mix from the master VIP levels as Gold 69, Silver 21, Bronze 10, for correct revenue 407500, rather than accepting the menu's opening 72/18/10 count summary and 415000 total as authoritative.",
+        "It computes or otherwise supports the billed/input package mix from the messy/billed VIP levels as Gold 28, Silver 68, Bronze 4, for billed revenue 314000."
+      ]
+    },
+    {
+      "name": "row_level_billing_actions",
+      "weight": 8,
+      "rubric": "The updated revenue reconciliation gives auditable row-level billing actions from corrected VIP levels and package costs.",
+      "criterion": [
+        "It includes a patient-level revenue audit for all 100 Guest IDs with correct VIP level, billed/input VIP level, correct package cost, billed package cost, and a billing action or result.",
+        "It correctly handles these visible anchor rows: VIP-801 Silver vs Bronze is leakage/underbilling of 1500; VIP-807 Bronze vs Gold is overcharge of 4000; VIP-810 Gold vs Bronze is leakage/underbilling of 4000; VIP-823 Gold vs Silver is leakage/underbilling of 2500; VIP-802 Silver vs Silver is a match or NIL.",
+        "Variance sign convention may be Billed minus Correct or Correct minus Billed, but the leakage/overcharge labels and collect/refund directions must be unambiguous and correct."
+      ]
+    },
+    {
+      "name": "aggregate_revenue_reconciliation_totals",
+      "weight": 8,
+      "rubric": "The financial summary exposes the correct aggregate leakage, overcharge, match, and net exposure totals.",
+      "criterion": [
+        "It reports correct revenue 407500 and billed/input revenue 314000 from the row-level audit.",
+        "It reports 71 leakage or underbilled accounts totaling 178500, 28 overcharge or overbilled accounts totaling 85000, and 1 correctly billed match.",
+        "It states the net revenue shortfall, recovery, or exposure as 93500 with a clear direction, and pairs leakage with collect/rebill action and overcharge with refund/credit action."
+      ]
+    },
+    {
+      "name": "life_threatening_triage_selection",
+      "weight": 8,
+      "rubric": "The emergency schedule selects the life-threatening patients from the public lab results and triage log exactly.",
+      "criterion": [
+        "It schedules the four CRISIS/CRITICAL patients VIP-880 Christopher Vance, VIP-823 Andrew Jackson, VIP-802 Sarah Jenkins, and VIP-817 Kevin Thompson.",
+        "It carries their public clinical anchors: VIP-880 CRITICAL BP 200/130 HR 120 call 911; VIP-823 CRISIS BP 190/120 HR 105 hypertensive urgency STAT; VIP-802 CRISIS BP 185/115 HR 98 immediate MD intervention; VIP-817 CRISIS BP 120/80 HR 115 tachycardia immediate EKG.",
+        "It does not add High, Elevated, Low, or Normal triage patients to the emergency physician schedule as life-threatening cases."
+      ]
+    },
+    {
+      "name": "emergency_schedule_clash_elimination",
+      "weight": 7,
+      "rubric": "The emergency schedule removes appointment clashes and makes the conflict-resolution evidence visible.",
+      "criterion": [
+        "Each of the four life-threatening patients has an appointment start and end time, an assigned physician or clinical resource, and enough scheduling detail for overlap checking.",
+        "The time windows are non-overlapping, or any shared physician/resource is otherwise not double-booked at the same time.",
+        "The output includes an explicit clash, overlap, or no-conflict verification or resolution log; priority order should place the CRITICAL case first or give a clinically reasonable justification."
+      ]
+    },
+    {
+      "name": "medical_clearance_letter_and_urgent_exclusions",
+      "weight": 7,
+      "rubric": "The clearance artifact is a letter-style clinical communication and does not clear the life-threatening patients.",
+      "criterion": [
+        "The submission includes a medical clearance letter or letter-style document for patients who passed screening; a spreadsheet-only roster without letter content is not sufficient for this item.",
+        "The clearance logic is defensible from the visible prompt and triage log. Do not require the hidden solution's exact 96-patient count; Normal-only, non-life-threatening, or equivalent conservative interpretations may receive credit if consistently documented.",
+        "The four life-threatening patients VIP-880, VIP-823, VIP-802, and VIP-817 are excluded from the cleared roster or explicitly marked not cleared/emergency, and none of them is presented as medically cleared."
+      ]
+    },
+    {
+      "name": "integrated_master_patient_level_propagation",
+      "weight": 12,
+      "rubric": "The integrated executive master combines identity, VIP entitlement, allergy, package cost, financial audit, and clinical triage at patient-row level.",
+      "criterion": [
+        "It contains a patient-level integrated master for all 100 Guest IDs, not just separate dashboards or disconnected source summaries.",
+        "Each patient row has corrected legal name, master VIP level, verified allergy, populated package cost, lab triage status/action, and billing audit result or disposition on the same row or in an immediately linked patient-level structure.",
+        "It correctly propagates these visible anchor rows: VIP-802 Silver/2500/Severe: Peanuts/CRISIS/match; VIP-817 Gold/5000/Severe: Bee Stings/CRISIS/leakage; VIP-823 Gold/5000/None/CRISIS/leakage; VIP-880 Gold/5000/None/CRITICAL/leakage.",
+        "Do not award this item if the integrated patient rows leave package cost blank or require the reader to infer patient package costs from a separate unjoined reference table."
+      ]
+    },
+    {
+      "name": "explanatory_report_audit_trail",
+      "weight": 9,
+      "rubric": "The explanatory file documents the end-to-end method and key outputs so a clinic reviewer can audit the work.",
+      "criterion": [
+        "It names or clearly describes the public source files and methods: master-over-messy identity precedence, medical testing menu unit costs, billing variance logic, CRISIS/CRITICAL emergency selection, clash elimination, clearance handling, and integrated master assembly.",
+        "It includes the key derived anchors: 88 name errors, 99 VIP errors, 15 allergy errors; correct revenue 407500, billed revenue 314000, leakage 178500, overcharge 85000, net 93500; and the four urgent IDs VIP-880, VIP-823, VIP-802, and VIP-817.",
+        "It cross-references the produced deliverables or sections enough that the reviewer can trace each task phase from source data to final output."
+      ]
+    }
+  ]
+}

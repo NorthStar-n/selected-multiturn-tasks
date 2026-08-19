@@ -1,0 +1,7 @@
+allergy_id,case_id,substance,reaction,severity,record_type,status,recorded_at,verified_at,source,crosswalk_group,notes
+ALG-PCN-20240703,CT-2026-0713-18,penicillin class,hives,HIGH,allergy,active,2024-07-03 10:14,2026-07-10 12:44,admission interview,penicillin,Used for penicillin-class medication screening.
+ALG-ACEI-20260710,CT-2026-0713-18,lisinopril,cough,LOW,intolerance,inactive,2026-07-10 08:41,2026-07-12 14:22,admission interview,ACE inhibitor,Superseded by verified allergy update.
+ALG-ACEI-20260712,CT-2026-0713-18,lisinopril,angioedema,HIGH,allergy,active,2026-07-12 14:22,2026-07-12 14:22,allergy nurse verification,ACE inhibitor,Active severe reaction.
+ALG-NSAID-20260218,CT-2026-0713-18,naproxen,hives,HIGH,allergy,active,2026-02-18 09:05,2026-07-10 12:47,patient-reported verified history,NSAID,Applies to naproxen source rows.
+ALG-LATEX-20220109,CT-2026-0713-18,latex,rash,MED,allergy,active,2022-01-09 15:22,2026-07-10 12:47,EHR allergy module,non-medication,No medication row maps to this allergy.
+ALG-SULFA-20230718,CT-2026-0713-18,sulfonamide antibiotics,nausea,LOW,intolerance,active,2023-07-18 11:26,2026-07-10 12:47,patient-reported,sulfonamide,Operational guide says intolerance alone is not an automatic stop.

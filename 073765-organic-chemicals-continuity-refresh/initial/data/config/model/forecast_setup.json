@@ -1,0 +1,33 @@
+{
+  "model_card_id": "MODEL-BRIDGE-23-03",
+  "governing_release": "REV-MR-23-03",
+  "bridge_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "forecast_years": [
+    2023,
+    2024
+  ],
+  "bridge_history_file": "data/trade/governed_export_bridge_2018_2022.csv",
+  "regression_training_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "real_volume_formula": "nominal_value / annual_ppi_average * 100",
+  "macro_index_formula": "mean(exports_gdp_pct, manufacturing_value_added, chemical_employment_thousand) normalized to 2022",
+  "regression_terms": [
+    "intercept",
+    "year_offset",
+    "macro_index"
+  ]
+}

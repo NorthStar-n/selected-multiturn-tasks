@@ -1,0 +1,154 @@
+{
+  "total_points": 140,
+  "rubrics": [
+    {
+      "name": "professional_style_required_files_and_native_usability",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the submission must provide the complete requested native output set with meaningful editable content.",
+      "criterion": [
+        "Both exact files, med_rec.xlsx and pharmacist_note.docx, are present as the requested output set; unsupported substitute files do not replace either deliverable.",
+        "med_rec.xlsx opens as an editable workbook with reconciliation tables or formulas, and pharmacist_note.docx opens as an editable Word document with prose and tables rather than screenshots or flattened pages.",
+        "The files contain case-specific reconciliation content and no placeholder, sample, template, private build, or generic filler text."
+      ]
+    },
+    {
+      "name": "population_scope_and_duplicate_control",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the submission must retain the complete index medication population and handle duplicate/out-of-scope rows correctly.",
+      "criterion": [
+        "med_rec.xlsx enumerates exactly 35 retained medication identities for CT-2026-0713-18 and reports the action count mix as KEEP 13, CHANGE 6, STOP 14, and CLARIFY 2.",
+        "The outputs exclude the CT-2026-0713-19 cetirizine row from the medication population and do not let it affect any count, action status, or note conclusion.",
+        "The outputs collapse the patient-entered Lopressor/metoprolol tartrate duplicate into one stopped metoprolol tartrate identity while keeping metoprolol succinate ER as a separate changed medication."
+      ]
+    },
+    {
+      "name": "authority_timeline_precedence",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the submission must resolve the governing chronology and source authority before assigning final actions.",
+      "criterion": [
+        "The outputs identify DCS-744201-FINAL signed 2026-07-13 16:40 as the controlling discharge medication source over preliminary queue rows.",
+        "The outputs use the later EML-20260714-1510 clarification to resolve potassium chloride as KEEP and do not leave it on hold.",
+        "The outputs use approved formulary revision FG-2026-04 R4.2, reject the draft R4.3 rabeprazole language, and keep preliminary/current queue rows in the correct chronological role."
+      ]
+    },
+    {
+      "name": "antithrombotic_disposition_cascade",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the submission must correctly resolve the antithrombotic-related medication actions and the superseded queue decoy.",
+      "criterion": [
+        "Apixaban 5 mg tablet is KEEP, while warfarin 5 mg tablet is STOP.",
+        "Aspirin 81 mg EC tablet and clopidogrel 75 mg tablet are STOP rather than carried forward from old home or pharmacy records.",
+        "The outputs explicitly reject or neutralize the RCQ-7714 preliminary warfarin keep signal because it predates the final signed transition summary."
+      ]
+    },
+    {
+      "name": "formulary_substitution_and_non_substitution",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the submission must apply only the approved product-level substitutions and reject tempting class-level or draft substitutions.",
+      "criterion": [
+        "The outputs resolve insulin glargine products to insulin glargine-yfgn U-100 pen at 30 units nightly, not the old 28-unit home/pharmacy dose.",
+        "The outputs resolve pantoprazole 40 mg to outpatient omeprazole 20 mg and do not use rabeprazole.",
+        "The outputs collapse albuterol HFA brand variants and Klor-Con M20/potassium chloride ER 20 mEq under their approved product-level substitutions.",
+        "The outputs do not collapse atorvastatin with rosuvastatin or metoprolol tartrate with metoprolol succinate ER; those pairs remain separate with their own final actions."
+      ]
+    },
+    {
+      "name": "active_allergy_conflict_actions",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the submission must use active allergy evidence to drive the appropriate operational stop/escalation actions.",
+      "criterion": [
+        "Lisinopril 20 mg tablet is STOP and tied to active allergy anchor ALG-ACEI-20260712 rather than the earlier inactive intolerance row or ready-fill pharmacy row.",
+        "Amoxicillin-clavulanate 875/125 mg tablet is STOP and tied to active allergy anchor ALG-PCN-20240703.",
+        "Naproxen 500 mg tablet is STOP and tied to active allergy anchor ALG-NSAID-20260218.",
+        "The outputs keep the action operational and evidence-based without inventing unsupported clinical diagnoses or new treatment choices."
+      ]
+    },
+    {
+      "name": "dose_change_and_replacement_actions",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the submission must carry the discharge dose/product changes through the register and note.",
+      "criterion": [
+        "Metoprolol tartrate 50 mg tablet is STOP and metoprolol succinate ER 100 mg tablet is CHANGE; the release-form change is not treated as a duplicate keep.",
+        "Furosemide is carried forward as furosemide 40 mg tablet CHANGE, not as the old 20 mg dose.",
+        "Losartan 50 mg tablet and rosuvastatin 20 mg tablet are included as changed/new discharge medications, while lisinopril and atorvastatin are stopped.",
+        "These changed medications appear consistently in the workbook register/crosswalk and in the pharmacist note."
+      ]
+    },
+    {
+      "name": "clarification_boundary_and_uncertainty",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the submission must preserve the fair safety boundary by clarifying only the medications that remain unsupported by the visible evidence.",
+      "criterion": [
+        "The only CLARIFY medications are spironolactone 25 mg tablet and magnesium oxide 400 mg tablet.",
+        "Potassium chloride ER 20 mEq tablet is KEEP after EML-20260714-1510 and is not included in the unresolved clarification set.",
+        "The outputs assign spironolactone to prescriber/cardiology clarification due 2026-07-15 and magnesium oxide to discharging-service clarification due 2026-07-16 or a clearly equivalent owner/timing.",
+        "The pharmacist note states that omitted active medications are not converted to KEEP or STOP without prescriber support."
+      ]
+    },
+    {
+      "name": "follow_up_prioritization_and_owner_actions",
+      "weight": 10,
+      "rubric": "In pharmacist_note.docx and med_rec.xlsx, the submission must translate the reconciled facts into usable operational follow-up without overstepping the pharmacist role.",
+      "criterion": [
+        "High-risk same-day pharmacist review is assigned to anticoagulant, insulin, opioid stop, and severe-allergy conflict rows, including warfarin/apixaban, insulin glargine/lispro, oxycodone, lisinopril, amoxicillin-clavulanate, and naproxen.",
+        "Profile cleanup or counseling actions are assigned for stale or superseded stopped rows such as warfarin, lisinopril ready-fill, clopidogrel, atorvastatin, docusate, and oxycodone.",
+        "Clarification questions are routed to the named clinical owner rather than resolved by unsupported inference, while routine low-risk keeps/stops are not escalated as urgent without evidence."
+      ]
+    },
+    {
+      "name": "cross_deliverable_fact_consistency",
+      "weight": 10,
+      "rubric": "Across med_rec.xlsx and pharmacist_note.docx, the submission must keep the shared medication-reconciliation fact model consistent.",
+      "criterion": [
+        "Both deliverables report the same retained population count of 35 and the same action mix: KEEP 13, CHANGE 6, STOP 14, CLARIFY 2.",
+        "Both deliverables identify the same clarification set: spironolactone 25 mg tablet and magnesium oxide 400 mg tablet only.",
+        "Named material dispositions match across both files for apixaban, warfarin, potassium chloride, insulin glargine-yfgn, omeprazole, lisinopril, metoprolol tartrate, metoprolol succinate ER, atorvastatin, and rosuvastatin.",
+        "No deliverable contradicts another on authority basis, action status, owner, due date, or exclusion of CT-2026-0713-19."
+      ]
+    },
+    {
+      "name": "professional_style_workbook_native_model",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx, the workbook must behave like a native reconciliation model rather than a pasted report.",
+      "criterion": [
+        "The workbook uses editable native tables or filtered ranges for the register, source crosswalk, timeline, status view, and checks.",
+        "Action and risk/status summaries are recomputable from the register through formulas or live workbook ranges, with no formula errors or stale sample values visible.",
+        "Dates and counts are stored and displayed with appropriate native date/number formatting, and action/risk fields use controlled values or clear validation treatment.",
+        "Any chart or summary view is tied to workbook data ranges and remains readable without serving as decorative filler."
+      ]
+    },
+    {
+      "name": "professional_style_structured_evidence_views",
+      "weight": 10,
+      "rubric": "In med_rec.xlsx and pharmacist_note.docx, the structured evidence views must be decision-useful and readable for a pharmacy handoff.",
+      "criterion": [
+        "The workbook provides compact crosswalk, timeline, risk/escalation, and status views that help trace source variants to final actions.",
+        "Material action rows carry recognizable evidence anchors such as DCS line IDs, allergy IDs, queue IDs, formulary rule IDs, or clarification IDs.",
+        "The pharmacist note uses a compact evidence table or equivalent structured block for the key exceptions, not a generic narrative summary.",
+        "Tables are readable at normal viewing size with stable identifiers, concise rationale text, and no clipped, overlapping, or excessively compressed content."
+      ]
+    },
+    {
+      "name": "professional_style_docx_decision_memo_quality",
+      "weight": 10,
+      "rubric": "In pharmacist_note.docx, the note must be a polished operational decision memo suitable for a pharmacist handoff.",
+      "criterion": [
+        "The document has a clear memo header or document-control context, an explicit reconciliation decision, and a compact statement of the population/action mix.",
+        "The note includes a focused evidence table and an owner/timing table for next steps, with editable Word tables rather than images of tables.",
+        "The memo uses readable hierarchy, page furniture, and concise professional wording; no headings, table cells, or footer content are clipped or visually incoherent.",
+        "The note makes the escalation boundary visible: open questions remain open, while evidence-supported keep/change/stop rows are stated decisively."
+      ]
+    },
+    {
+      "name": "professional_style_cross_file_presentation_consistency",
+      "weight": 10,
+      "rubric": "Across med_rec.xlsx and pharmacist_note.docx, the native outputs must present one coherent work product rather than two disconnected summaries.",
+      "criterion": [
+        "The same medication IDs, action vocabulary, risk language, owner labels, date convention, and evidence-anchor style are used consistently across both files.",
+        "The two files use a restrained healthcare operations visual language with readable tables and compatible hierarchy, without distracting decorative assets or unrelated imagery.",
+        "Counts, IDs, and statuses are easy to scan in both files because dense information is organized into aligned tables or compact evidence blocks.",
+        "No visible template residue, sample metadata, or unexplained internal builder controls appear in the rendered or native content."
+      ]
+    }
+  ]
+}

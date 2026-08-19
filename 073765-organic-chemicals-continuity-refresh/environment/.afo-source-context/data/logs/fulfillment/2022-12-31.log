@@ -1,0 +1,4 @@
+2022-12-31 06:12:03.884 INFO [dock.matcher] polling WMS late-post queue batch=ASN-W52
+2022-12-31 06:14:52.109 INFO [dock.matcher] matched ASN ASN-GBR-773 order_ref=PO-2022-10488 erp_item=ERP-OC-1042 received_qty_kg=7900 status=posted
+2022-12-31 06:17:10.501 WARN [dock.matcher] handheld status carried trailing whitespace receipt_id=RCPT-7837 raw_status='Received '
+2022-12-31 06:20:44.300 INFO [dock.matcher] wrote matcher journal journal_id=JRN-W52-ACN rows=2

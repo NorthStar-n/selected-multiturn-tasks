@@ -1,0 +1,6 @@
+trace_id,stack_code,length_mm,width_um,description
+TRACE-HDI-110,HDI-70,38.0,500.0,standard inner trace
+TRACE-HB-180,HB-STITCH,42.0,450.0,annealed stitch wire coupon
+TRACE-HB-205,HB-RDL,48.0,410.0,hybrid bonding RDL line
+TRACE-HB-225,HB-RDL,50.0,400.0,high aspect ratio panel HB-0726-CU04
+TRACE-BGA-320,BGA-SN,28.0,320.0,"intermetallic coupon, not release trace"

@@ -1,0 +1,215 @@
+{
+  "total_points": 205,
+  "rubrics": [
+    {
+      "name": "source_register_material_identity_contract",
+      "weight": 2,
+      "rubric": "In source_register.xlsx, the submission must establish the copper qualification population as structured material records before lot decisions are made.",
+      "criterion": [
+        "The register enumerates exactly these 13 material identities as row-level records: MAT-AGALCU-INCL, MAT-AL2CU-THETA, MAT-ALCU3-GAMMA, MAT-CU-C101, MAT-CU-HBPLATE, MAT-CU-WIRE, MAT-CU2O-CUPRITE, MAT-CU3SN-ETA, MAT-CUAU-L10, MAT-CUO-TENORITE, MAT-CUSO4-CUPRIC, MAT-YBCO-CUPRATE, and MAT-ZNCU-BETA.",
+        "Each material identity has an explicit inclusion, exclusion, comparator, coupon-only, or decoy status; aggregate-only summaries do not satisfy this check.",
+        "The July active lot population is separated from archive LOT-CU-2606-Z; the archive may be retained for traceability but must not be counted as an active release lot."
+      ]
+    },
+    {
+      "name": "source_register_evidence_schema_and_anchor_contract",
+      "weight": 2,
+      "rubric": "In source_register.xlsx, the evidence register must be an auditable workpaper rather than a narrative-only list.",
+      "criterion": [
+        "Structured fields are present for canonical material ID, formula or name, source family, source-quality flag, inclusion or exclusion status, alias or oxidation-notation resolution, evidence anchors, and documented exception fields.",
+        "Row-level anchors are visible for lot IDs, assay IDs, conductivity or resistance IDs, waiver IDs, control-plan or PCN identifiers, catalog IDs, and rejected-decoy records.",
+        "The register distinguishes measured lab evidence, supplier/specification evidence, identity-only catalog evidence, computed comparator evidence, literature-only evidence, and rejected false positives."
+      ]
+    },
+    {
+      "name": "governed_lot_disposition_identity",
+      "weight": 18,
+      "rubric": "In technical_findings_matrix.xlsx and risk_assessment.docx, the active July lot identities must carry the governed release status.",
+      "criterion": [
+        "LOT-CU-2607-A and LOT-CU-2607-C are release lots.",
+        "LOT-CU-2607-B is a conditional release only under MAT-WVR-26-071.",
+        "LOT-CU-2607-D and LOT-CU-2607-E are hold or no-release lots; LOT-CU-2607-E must not be treated as releaseable, coupon-ok, archive-only conditional, or conditional-only."
+      ]
+    },
+    {
+      "name": "active_lot_status_totals_and_archive_exclusion",
+      "weight": 15,
+      "rubric": "In technical_findings_matrix.xlsx, qualification_readout.pptx, and risk_assessment.docx, the active July status counts must match the governed population.",
+      "criterion": [
+        "The active July status totals are exactly 2 release, 1 conditional release, and 2 hold.",
+        "LOT-CU-2606-Z is excluded from those active July totals even if it appears as traceability context.",
+        "Totals such as 2 release / 2 conditional / 1 hold, 2 release / 1 conditional / 1 hold, or 1 release / 3 conditional / 1 hold fail this numeric-count criterion."
+      ]
+    },
+    {
+      "name": "lot_e_lead_hold_numeric_basis",
+      "weight": 14,
+      "rubric": "In source_register.xlsx, technical_findings_matrix.xlsx, and risk_assessment.docx, LOT-CU-2607-E must be held because of the lead-limit breach.",
+      "criterion": [
+        "LOT-CU-2607-E is linked to MAT-CU3SN-ETA and assay evidence showing lead at 5.4 ppm.",
+        "The governed lead limit is 5.0 ppm, so the output explicitly treats the 5.4 ppm value as an over-limit result.",
+        "The over-limit lead result drives a hold, quarantine, or no-release disposition; downgrading it to coupon-only conditional, process-evaluation conditional, or releaseable context fails this criterion."
+      ]
+    },
+    {
+      "name": "cross_artifact_status_propagation",
+      "weight": 16,
+      "rubric": "Across source_register.xlsx, technical_findings_matrix.xlsx, qualification_readout.pptx, and risk_assessment.docx, the governed status results must propagate without drift.",
+      "criterion": [
+        "The same five active lot IDs appear in the downstream model, readout, and review document.",
+        "The top actionable lot order is LOT-CU-2607-D first, LOT-CU-2607-E second, and LOT-CU-2607-B third, with D and E shown as hold/no-release and B shown as conditional under waiver.",
+        "No downstream deliverable contradicts the model by making LOT-CU-2607-E conditional-only, changing LOT-CU-2607-C to conditional, or changing the hold population."
+      ]
+    },
+    {
+      "name": "risk_assessment_release_action_register_decisions",
+      "weight": 26,
+      "rubric": "In risk_assessment.docx, the incident-review action register must operationalize the governed lot decisions.",
+      "criterion": [
+        "The decision statement releases LOT-CU-2607-A and LOT-CU-2607-C, conditionally releases LOT-CU-2607-B only under MAT-WVR-26-071, and holds LOT-CU-2607-D and LOT-CU-2607-E.",
+        "Corrective actions include owner, due timing, and closure criteria for LOT-CU-2607-D sulfur/conductivity/resistance remediation and for LOT-CU-2607-E lead containment or no-release segregation.",
+        "The waiver follow-up for LOT-CU-2607-B names MAT-WVR-26-071, keeps the oxygen exception scoped to that lot and species, and does not use the waiver to change any other lot or impurity decision."
+      ]
+    },
+    {
+      "name": "trace_hb_resistance_precision_and_inputs",
+      "weight": 13,
+      "rubric": "In technical_findings_matrix.xlsx, qualification_readout.pptx, and risk_assessment.docx, the TRACE-HB-225 resistance calculation must be precise enough to support the release decision.",
+      "criterion": [
+        "The LOT-CU-2607-D resistance is reported within 155.32 to 155.36 mOhm and the margin versus the 160 mOhm limit is reported within 4.64 to 4.68 mOhm in the decision artifacts.",
+        "The calculation is linked to the governing inputs: resistivity 1.762 uOhm-cm, temperature coefficient 0.00393 per C, service temperature 85 C, trace length 50 mm, width 400 um, thickness 17.8 um, and the 160 mOhm Rev. 2 limit.",
+        "One-decimal summaries such as 155.3 mOhm / 4.7 mOhm without the tighter model values, room-temperature shortcuts, or geometry-free margin assertions fail this precision check."
+      ]
+    },
+    {
+      "name": "condition_matched_yield_decision_artifacts",
+      "weight": 10,
+      "rubric": "In qualification_readout.pptx or risk_assessment.docx, the condition-matched yield-strength decision must be visible to the release audience.",
+      "criterion": [
+        "The decision artifacts state that the selected MAT-CU-HBPLATE / LOT-CU-2607-D yield strength is 219 MPa from the protocol-matched measurement.",
+        "They also state that the 176 MPa value at the off-protocol 85 C / 0.01 s^-1 condition is retained only as non-governing evidence and must not replace the 219 MPa value.",
+        "A workbook-only property table with no downstream numeric explanation in the readout or review document fails this criterion."
+      ]
+    },
+    {
+      "name": "cod_pure_copper_count_and_symmetry",
+      "weight": 8,
+      "rubric": "In source_register.xlsx or technical_findings_matrix.xlsx, COD evidence must resolve standard elemental copper rather than a broad all-Cu-bearing catalog signal.",
+      "criterion": [
+        "The outputs report pure elemental copper COD evidence with 22 total pure-Cu records or an equivalent pure-Cu count summary.",
+        "The dominant pure-Cu symmetry is F m -3 m or Fm-3m with space group 225.",
+        "The outputs do not substitute a broad all-Cu-bearing P -1 surface signal or mixed-compound COD result for the standard elemental copper answer."
+      ]
+    },
+    {
+      "name": "source_quality_lineage_and_decoy_precedence",
+      "weight": 8,
+      "rubric": "In source_register.xlsx, source-quality lineage flags must govern inclusion and decoy precedence.",
+      "criterion": [
+        "The register includes a COD coverage-quality flag such as cod_element_coverage_gaps and does not treat missing non-Cu element coverage as proof that mixed compounds are absent.",
+        "The register includes LIT-0726-07 or an equivalent literature false-positive record and rejects it as conductor property evidence.",
+        "The same lineage or decoy section preserves identity-only PubChem treatment and archive-traceability handling, so source-quality flags visibly control what is included or excluded."
+      ]
+    },
+    {
+      "name": "oqmd_oxide_stability_numeric_anchors",
+      "weight": 6,
+      "rubric": "In source_register.xlsx or technical_findings_matrix.xlsx, OQMD oxide stability anchors must be kept separate from PubChem sulfate identity evidence.",
+      "criterion": [
+        "The comparable oxide anchors are reported as Cu2O stability approximately 0.000441 eV/atom and CuO stability approximately 0.026505 eV/atom.",
+        "Copper sulfate identity evidence such as PubChem CID 24462 is not used as an OQMD hull-stability substitute.",
+        "Using only formation energies such as about -0.684 or -0.806 eV/atom, rounding the stability anchors to 0 and 0.027 without the exact values, or calling sulfate stable from PubChem canonicalization fails this criterion."
+      ]
+    },
+    {
+      "name": "revision_and_shortcut_sensitivity_treatment",
+      "weight": 3,
+      "rubric": "In technical_findings_matrix.xlsx, qualification_readout.pptx, or risk_assessment.docx, the governing revision and tempting shortcut cases must be treated as non-governing.",
+      "criterion": [
+        "The governed electrical limit is CCP-CU-180 Rev. 2 at 160 mOhm, while the 170 mOhm Rev. 1 pilot limit is superseded or rejected for the July release decision.",
+        "PCN-HB-044 Rev. C is applied only to the HB finished copper thickness floor of 17.5 um and does not alter the 160 mOhm electrical limit.",
+        "The artifacts identify a room-temperature or 23 C resistance shortcut and a Rev. 1 170 mOhm shortcut as sensitivity or ablation cases that must not change the hold decision."
+      ]
+    },
+    {
+      "name": "measured_value_priority_and_literature_flags",
+      "weight": 2,
+      "rubric": "In source_register.xlsx or technical_findings_matrix.xlsx, measured values must take priority over literature-only values and unverified literature values must stay flagged.",
+      "criterion": [
+        "Measured values are used where present, including 101.52 percent IACS for MAT-CU-C101 electrical conductivity and 219 MPa for MAT-CU-HBPLATE yield strength; nearby literature values such as 101.0 percent IACS and 228 MPa do not replace them.",
+        "Measured thermal conductivity values of 392.6 W/mK for MAT-CU-C101 and 386.8 W/mK for MAT-CU-HBPLATE are retained as measured property evidence.",
+        "Coefficient of thermal expansion and electromigration activation energy values are flagged as literature-only or unverified, not as measured lot evidence."
+      ]
+    },
+    {
+      "name": "professional_style_source_register_editable_PS01",
+      "weight": 7,
+      "rubric": "PS-01: source_register.xlsx must be an editable workbook with frozen/filterable evidence tables and legible row-level source anchors, not pasted screenshots.",
+      "criterion": [
+        "The workbook uses native editable cells with filterable or frozen evidence tables for the material register and evidence anchors.",
+        "Row-level anchors are visible and legible for material IDs, lot IDs, catalog IDs, waiver IDs, and governing-document IDs.",
+        "Screenshots or flattened images used in place of the register table fail this style criterion."
+      ]
+    },
+    {
+      "name": "professional_style_model_native_formulas_PS02",
+      "weight": 8,
+      "rubric": "PS-02: technical_findings_matrix.xlsx must use native formulas, named assumptions or clearly identified input cells, scenario checks, and no visible formula errors.",
+      "criterion": [
+        "The scenario model contains native spreadsheet formulas for impurity status, resistance, margin, risk scoring, and at least one sensitivity calculation.",
+        "Assumptions and inputs are named or clearly identified so the calculation flow is auditable.",
+        "Visible formula errors, pasted-only model outputs, or missing scenario checks fail this style criterion."
+      ]
+    },
+    {
+      "name": "professional_style_workbook_numeric_cells_PS03",
+      "weight": 8,
+      "rubric": "PS-03: Workbook numeric, percentage, unit, and date values must be stored as native cells with appropriate formats rather than display strings.",
+      "criterion": [
+        "Numeric quantities such as ppm, mOhm, percent IACS, eV/atom, dates, and risk scores are stored as numbers or dates with suitable number formats.",
+        "Formula cells consume numeric inputs without text parsing workarounds.",
+        "Material numbers stored primarily as formatted strings such as '155.34 mOhm' in calculation cells fail this style criterion."
+      ]
+    },
+    {
+      "name": "professional_style_readout_alignment_grid_PS04",
+      "weight": 8,
+      "rubric": "PS-04: qualification_readout.pptx must use a documented alignment grid with consistent margins, gutters, and baselines; text and labels must not overlap or clip.",
+      "criterion": [
+        "The deck visibly uses a consistent alignment grid or includes a compact grid note while keeping margins, gutters, and baselines consistent.",
+        "Charts, labels, and callouts are readable and do not overlap or clip on the rendered slides.",
+        "Crowded slides with obscured IDs, clipped labels, or inconsistent alignment fail this style criterion."
+      ]
+    },
+    {
+      "name": "professional_style_docx_native_structure_PS05",
+      "weight": 8,
+      "rubric": "PS-05: risk_assessment.docx must use semantic heading styles, editable tables, captions or cross-references where useful, headers/footers, and controlled page breaks.",
+      "criterion": [
+        "The document uses semantic heading styles and editable tables for the timeline, findings, and action register.",
+        "Headers or footers identify the controlled review context, and page breaks do not split critical table headers from their rows.",
+        "A visually flattened document, screenshot tables, or unstructured plain text fails this style criterion."
+      ]
+    },
+    {
+      "name": "professional_style_cross_file_visual_consistency_PS07",
+      "weight": 11,
+      "rubric": "PS-07: Status colors, risk IDs, totals, and recommendations must be visually consistent across all four deliverables.",
+      "criterion": [
+        "The same risk IDs, status labels, totals, and recommendations appear consistently across the register, model, readout, and review document.",
+        "Status colors or labels are consistent enough that hold, conditional release, release, and excluded or decoy records are not visually ambiguous.",
+        "Contradictory IDs, totals, color meanings, or recommendations across files fail this style criterion even if one file is individually polished."
+      ]
+    },
+    {
+      "name": "professional_style_safe_context_metadata_PS08",
+      "weight": 12,
+      "rubric": "PS-08: Native file metadata should identify the sector, intended use, template/context ID when applicable, and replacement status without exposing hidden answers or internal build paths.",
+      "criterion": [
+        "Native metadata in risk_assessment.docx and qualification_readout.pptx identifies the copper materials sector or use context, the intended release-meeting or incident-review use, and a template/context or replacement/supersession status.",
+        "Workbook metadata identifies the source register and scenario model as copper qualification workpapers rather than generic unnamed files.",
+        "Metadata does not expose hidden rubric answers, internal ground-truth paths, builder prompts, private credentials, or unrelated local filesystem paths."
+      ]
+    }
+  ]
+}

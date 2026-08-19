@@ -1,0 +1,56 @@
+{
+  "schema_version": "afo.multiturn.conversation-rubric-lock.v1",
+  "scope": "native_resume_conversation_and_solver_visible_workspace",
+  "frozen_before_official_trials": true,
+  "post_trial_changes_allowed": false,
+  "official_trials_under_this_lock": 0,
+  "previous_trials_invalidated": true,
+  "source_task": {
+    "repository": "Parsewave-internal/long-horizon-final",
+    "pull_request": 33,
+    "head_sha": "da0ca5e9cd53964a21e86f54111885049ac195f5",
+    "instruction_sha256": "0dec7c467511bc8354fbf8f17748996c6941e188b13667e830edd911357e3fec",
+    "rubric_snapshot": ".afo-source-rubrics.json",
+    "rubric_sha256": "4a94f239111af2df0468fb690e8645eaf82f939692a8886081d6eff36c02f078"
+  },
+  "converted_task": {
+    "repository": "Parsewave-internal/multiturn-tasks",
+    "pull_request": 812,
+    "base_head_sha": "61a4c99b5f54da1be4f7906bb4efcc94db224e3f",
+    "conversation_sha256": "964c49e376958585cfb61c39364474aa15f68aacb367fa2c4952ea4a4b511176",
+    "native_session_sha256": "f3d618564079a027cf00fefea145c1d353fb4cdcd504a3c6cead08b80584c8b2",
+    "rendered_conversation_path": "review-artifacts/3519d9-patient-audit-clinical-reconciliation/conversation.md",
+    "rendered_conversation_sha256": "d875cce014a6b97e1197762c2f5f95043169d8218dcd99405e3fc12d8a7e07b5",
+    "current_instruction_sha256": "b6f94b061cc009d4c6a3221534ff33ffebaa5d1dd944907003d9f8d33553dddf"
+  },
+  "manual_history_amendment": {
+    "approved_by_team": true,
+    "method": "synchronized_existing_turn_amendment",
+    "modified_atif_steps": [
+      40,
+      41,
+      42
+    ],
+    "modified_native_turn_id": "019feafd-c79d-7480-a2d0-a7f73bdfa250",
+    "workspace_content_changed": false,
+    "checkpoint_content_reused": true,
+    "reason": "Add the source-task emergency scheduling and no-overlap policy to an existing prior user turn, record the existing solver turn as an explicit deferral, and make the current instruction depend on that history without changing checkpoint work."
+  },
+  "active_rubric": {
+    "path": "rubrics.json",
+    "sha256": "6c330d88048b8859e8a6c14890982efcf0dfc62de0b2947572c5b44070069fff",
+    "scoring_criteria": 11,
+    "scoring_points": 91,
+    "non_scoring_source_diagnostics": [
+      "explanatory_report_audit_trail"
+    ]
+  },
+  "policy": {
+    "approved_by_team": true,
+    "source_semantic_scope_preserved": true,
+    "score_scope_added": false,
+    "requirement_citations_required": true,
+    "undisclosed_source_requirements_retained_as_non_scoring_diagnostics": true,
+    "rationale": "Score only requirements disclosed in the amended user turns or readable from the resumed workspace. The team-approved synchronized amendment makes source-task emergency scheduling and no-overlap policy history-only; the undisclosed explanatory-report requirement remains diagnostic and non-scoring."
+  }
+}

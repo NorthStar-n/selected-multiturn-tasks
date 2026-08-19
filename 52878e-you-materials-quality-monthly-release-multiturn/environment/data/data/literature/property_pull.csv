@@ -1,0 +1,8 @@
+literature_id,material_id,property,value,unit,doi_or_source_id,title,use_class
+LIT-0726-01,MAT-CU-C101,electrical_conductivity_iacs,101.0,percent_IACS,10.1007/BF01174717,Thermal expansion of copper,property_literature
+LIT-0726-02,MAT-CU-HBPLATE,yield_strength,228.0,MPa,10.18434/mds2-4076,Elastic-plastic indentation on hybrid bonding copper,condition_relevant
+LIT-0726-03,MAT-CU-C101,coefficient_thermal_expansion,16.7,um_mK,10.1063/1.1728392,Copper lattice expansion study,literature_only
+LIT-0726-04,MAT-CU-HBPLATE,electromigration_activation_energy,0.86,eV,10.1109/ECTC.2026.cu-hb,Advanced packaging copper interconnect aging,literature_only
+LIT-0726-05,MAT-CUSO4-CUPRIC,compound_canonicalized,1.0,flag,PubChem CID 24462,Copper sulfate canonical compound,identity_only
+LIT-0726-06,MAT-YBCO-CUPRATE,superconducting_context,1.0,flag,10.18434/T4KP8J,NIST HTS cuprate database,domain_decoy
+LIT-0726-07,MAT-CU-C101,grid_support,1.0,flag,arXiv:3d-ic-packaging-page,Copper grid mentioned in packaging metadata,false_positive

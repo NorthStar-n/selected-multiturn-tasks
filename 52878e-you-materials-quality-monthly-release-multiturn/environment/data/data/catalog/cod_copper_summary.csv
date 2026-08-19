@@ -1,0 +1,5 @@
+material_id,canonical_name,cod_formula,cod_record_count,standard_condition_count,dominant_sg_number,dominant_space_group,dominant_count,example_cod_files,example_doi
+MAT-CU-C101,copper,- Cu -,22,12,225,F m -3 m,22,4105040;4105681;4313203;4313207;4313211,10.1021/ja9052569
+MAT-CU2O-CUPRITE,copper(I) oxide / cuprite,- Cu2 O -,5,5,224,P n -3 m :1,4,1000063;1010941;1010963;9005769;9007497,10.1007/BF01390765
+MAT-CUO-TENORITE,copper(II) oxide / tenorite,- Cu O -,19,19,15,C 1 2/c 1,17,1011148;1011194;1526990;1571907;4105682,10.1016/j.surfin.2024.104598
+MAT-CU3SN-ETA,eta Cu3Sn,- Cu3 Sn -,6,6,63,C m c m,5,1524122;2310770;2310771;2310772;2310773,10.1107/S205252061401806X

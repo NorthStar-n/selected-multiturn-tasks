@@ -1,0 +1,135 @@
+{
+  "total_points": 100,
+  "rubrics": [
+    {
+      "name": "population_register_identity",
+      "weight": 5,
+      "rubric": "correspondence_disposition_register.xlsx must account for the full July 1-10 warranty correspondence population exactly once and carry final response identity fields.",
+      "criterion": [
+        "The register contains exactly one row for each case_id MRQ-2026-0710-001 through MRQ-2026-0710-018, with no missing cases, extra case IDs, or duplicate case_id rows.",
+        "Each case row carries the matching source_corr_id in the NHG-MRQ-2026-07-001 through NHG-MRQ-2026-07-018 series, plus a final disposition and response type/code.",
+        "Held, routed, duplicate, backorder, partial, unavailable, ineligible, and special-product cases remain in the register population rather than being omitted or collapsed into summary-only counts."
+      ]
+    },
+    {
+      "name": "standard_order_import_population_totals",
+      "weight": 6,
+      "rubric": "standard_order_request_upload.xlsx must restrict the machine-ingest import surface to the executable standard order requests and reconcile the core totals.",
+      "criterion": [
+        "The import view contains only MRQ-2026-0710-001, MRQ-2026-0710-002, MRQ-2026-0710-011, MRQ-2026-0710-012, and MRQ-2026-0710-015.",
+        "The import view totals exactly 5 import rows, 9 approved units, and $151.00 internal warranty value within a $0.01 tolerance.",
+        "No backorder, credit hold, missing proof, invalid address, duplicate, special-product, family-not-covered, discontinued-without-replacement, expired-entitlement, unclear-product, or pure partial-remainder row appears on the import surface."
+      ]
+    },
+    {
+      "name": "standard_order_product_quantity_values",
+      "weight": 6,
+      "rubric": "Executable import rows must use the correct resolved products, quantities, and no-charge warranty values.",
+      "criterion": [
+        "MRQ-2026-0710-001 imports WH-FLTR-200 quantity 2 for $48.00, MRQ-2026-0710-011 imports WH-KNOB-110 quantity 4 for $38.00, and MRQ-2026-0710-015 imports WH-GASK-410 quantity 1 for $18.25.",
+        "MRQ-2026-0710-002 imports substitute SKU WH-HINGE-520 quantity 1 for $14.75 and does not import retired SKU WH-HINGE-510.",
+        "MRQ-2026-0710-012 imports only 1 WH-SHELF-310 unit for $32.00 and does not import the two units above the remaining allowance."
+      ]
+    },
+    {
+      "name": "held_excluded_rows_partial_remainder",
+      "weight": 6,
+      "rubric": "standard_order_request_upload.xlsx and the register must preserve the non-import population and the partial remainder with reasons and next owners.",
+      "criterion": [
+        "A non-import, held, excluded, or equivalent surface contains all 13 fully non-importable cases plus the two-unit remainder for MRQ-2026-0710-012, for 14 non-import rows or equivalent row-level entries.",
+        "The held entries identify CREDIT_HOLD for MRQ-2026-0710-006, MISSING_PROOF for MRQ-2026-0710-007, INVALID_ADDRESS for MRQ-2026-0710-008, and UNCLEAR_PRODUCT for MRQ-2026-0710-014 with next action owner or queue.",
+        "The non-import surface keeps MRQ-2026-0710-003, MRQ-2026-0710-017, MRQ-2026-0710-010, MRQ-2026-0710-009, MRQ-2026-0710-016, and MRQ-2026-0710-018 outside the import view with the applicable reason."
+      ]
+    },
+    {
+      "name": "edge_dispositions_special_routing",
+      "weight": 5,
+      "rubric": "The outputs must correctly handle the edge-case dispositions and special-product authority boundary.",
+      "criterion": [
+        "MRQ-2026-0710-004 is ineligible because the entitlement expired before the received date; MRQ-2026-0710-009 is unavailable because there is no approved replacement; MRQ-2026-0710-010 is a duplicate of MRQ-2026-0710-001; and MRQ-2026-0710-016 is family-not-covered.",
+        "MRQ-2026-0710-005 is routed under RTE-CUSTOM-PANEL to Product Config Team and MRQ-2026-0710-013 is routed under RTE-ENG-ADAPT to Service Engineering Intake.",
+        "MRQ-2026-0710-018 is treated as blocked special-product unavailable or SPECIAL_NONSTARTER with no feasibility referral, and no special-product output states or implies feasibility approval."
+      ]
+    },
+    {
+      "name": "customer_letter_population_commitments",
+      "weight": 5,
+      "rubric": "customer_response_letters.docx must provide one governed response per case and keep customer commitments within the permitted closeout state.",
+      "criterion": [
+        "The packet contains an individualized response for each case MRQ-2026-0710-001 through MRQ-2026-0710-018 with the case_id, matching source_corr_id, response date 2026-07-10, and Priya Nair as signer or reviewer.",
+        "Letters for the five executable import cases confirm only the matching resolved SKU, approved quantity, no-charge warranty handling, ship-to reference, and order request/import-preparation reference.",
+        "Exception letters state the applicable reason and response instruction, including the 2026-08-03 backorder date for MRQ-2026-0710-003 and MRQ-2026-0710-017, the two-unit unapproved remainder for MRQ-2026-0710-012, and no upload, shipment, credit-release, policy-exception, or feasibility-approval claim."
+      ]
+    },
+    {
+      "name": "exception_chart_final_scope",
+      "weight": 11,
+      "rubric": "The exception distribution chart in correspondence_disposition_register.xlsx must use the final closeout exception scope rather than the pre-closeout handoff scope.",
+      "criterion": [
+        "The chart source data and charted population use a final exception denominator of exactly 14 cases.",
+        "MRQ-2026-0710-002 and any SUBSTITUTION_REVIEW category are excluded from the final charted exception population because the case is resolved to an executable substitute standard order.",
+        "The chart still includes the MRQ-2026-0710-012 QTY_CAP_PARTIAL remainder as a final exception and does not replace the final denominator with a 15-row pre-closeout handoff count."
+      ]
+    },
+    {
+      "name": "exception_chart_ageband_numeric_values",
+      "weight": 11,
+      "rubric": "The chart data in correspondence_disposition_register.xlsx must report the exact final exception counts by category and aging band.",
+      "criterion": [
+        "The dashboard data reports BACKORDER as 1 in 0-2 days, 0 in 3-5 days, and 1 in 6-10 days; CREDIT_HOLD as 0/0/1; DISCONTINUED_NO_REPLACEMENT as 0/1/0; DUPLICATE_REQUEST as 0/1/0; and EXPIRED_ENTITLEMENT as 0/0/1.",
+        "The dashboard data reports FAMILY_NOT_COVERED as 1/0/0; INVALID_ADDRESS as 0/1/0; MISSING_PROOF as 0/1/0; QTY_CAP_PARTIAL as 0/1/0; SPECIAL_FEASIBILITY as 1/0/1; SPECIAL_NONSTARTER as 1/0/0; and UNCLEAR_PRODUCT as 1/0/0.",
+        "The age-band totals are exactly 5 for 0-2 days, 5 for 3-5 days, and 4 for 6-10 days, with no 11+ band or extra category count needed to reach the final 14-case denominator."
+      ]
+    },
+    {
+      "name": "source_handoff_final_reconciliation",
+      "weight": 11,
+      "rubric": "The register and controls must reconcile the supervisor handoff state to the final closeout state instead of carrying the pre-closeout exception count forward unchanged.",
+      "criterion": [
+        "correspondence_disposition_register.xlsx explains or shows that MRQ-2026-0710-002 moved from SUBSTITUTION_REVIEW to a resolved substitute standard order for WH-HINGE-520.",
+        "Control or check rows in the submitted workbooks tie the final exception chart/control population to 14 while separately preserving the 5 executable import rows, 9 import units, and 18 response rows or cases.",
+        "Any handoff-to-final difference is traceable through row-level case evidence, and the final controls do not treat the 15-row pre-closeout handoff population as the final exception denominator."
+      ]
+    },
+    {
+      "name": "professional_style_formula_control_lineage",
+      "weight": 10,
+      "rubric": "The Excel workbooks should expose live workbook mechanics for decision-critical controls rather than only hardcoded pass statements.",
+      "criterion": [
+        "Import readiness, validation status, row-count checks, quantity totals, line-value totals, and response/control counts are supported by formulas, native cell references, or formula-linked control cells tied to visible workbook rows.",
+        "The formula/control surfaces reconcile at least 18 cases, 5 executable import rows, 9 import units, and $151.00 import value.",
+        "The workbooks do not display formula error values such as #REF!, #DIV/0!, #VALUE!, #N/A, or #NAME? in populated control, import, register, or dashboard surfaces."
+      ]
+    },
+    {
+      "name": "professional_style_docx_native_letter_packet",
+      "weight": 8,
+      "rubric": "customer_response_letters.docx should function as a native governed letter packet rather than an undifferentiated text dump.",
+      "criterion": [
+        "The packet uses editable DOCX text and, where structured reference or distribution data is presented, native editable tables rather than screenshots or pasted images of text.",
+        "Individual letters use address/date/reference/salutation/body/signature structure and are separated by page or section breaks so each customer response is independently printable.",
+        "The document includes packet-level navigation or control material such as a response index, distribution record, headers/footers, page numbering, or equivalent native packet controls."
+      ]
+    },
+    {
+      "name": "professional_style_upload_workbook_operability",
+      "weight": 8,
+      "rubric": "standard_order_request_upload.xlsx should be operationally usable by the fulfillment import coordinator.",
+      "criterion": [
+        "The import surface has a stable schema-ordered header, text-safe identifiers, true numeric quantity/value cells, true dates where dates are shown, and no customer-letter prose mixed into import rows.",
+        "Import and non-import row surfaces use workbook affordances such as filters and frozen headings, and the workbook separates import rows, excluded/held rows, validation controls, source lineage, and schema or change-control information.",
+        "The upload workbook does not place a decorative chart or customer-facing correspondence content inside the machine-ingest import surface."
+      ]
+    },
+    {
+      "name": "professional_style_metadata_and_leakage",
+      "weight": 8,
+      "rubric": "The submitted deliverables should avoid private build leakage, stale template residue, and unrequested companion artifacts.",
+      "criterion": [
+        "Visible content and file properties do not contain environment_manifest, .task_build_meta, afo.v1, benchmark, generator, template IDs, Codex attribution, hidden answer keys, or private audit paths.",
+        "Visible template/sample text, placeholder labels, sample company names, and unused template sections are removed or replaced with Northstar Home Goods warranty-correspondence content.",
+        "The submitted package consists of the required .xlsx and .docx deliverables only, without standalone chart images, intermediate source files, or unrelated companion artifacts."
+      ]
+    }
+  ]
+}

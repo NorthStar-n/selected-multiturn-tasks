@@ -1,0 +1,30 @@
+{
+  "schema_version": "afo.frozen-rubric-provenance.v1",
+  "source_repository": "Parsewave-internal/long-horizon-final",
+  "source_pr": 2460,
+  "source_head": "1e0f7b03c32ecea873f0bdfe903804ce7ef5dafd",
+  "source_task_path": "tasks/018026-new-representative-ramp-certification-travel-group-sales",
+  "multiturn_base_head": "db98759918d1ef97f401e35de7362ff00b3a28c0",
+  "source_rubric_sha256": "c4a40b1ab2ca4748f9d829a1d83e5c1e5addc7919349fe804880c6dc3448b108",
+  "active_rubric_sha256": "92367d651b9207d2b2024ed1127eef85e30ff5659d66dc2234bc9dc0725ebe72",
+  "change_kind": "requirement-removal-and-clarification-only",
+  "changed_criteria": [
+    "schedule_remaining_work_feasible",
+    "coverage_financial_totals_reconcile",
+    "playbook_operating_logic_complete",
+    "formula_and_check_lineage_present",
+    "professional_style_schedule_xlsx_native_execution",
+    "professional_style_register_xlsx_native_execution",
+    "professional_style_coverage_xlsx_native_execution",
+    "professional_style_visuals_are_evidence_based",
+    "professional_style_template_and_metadata_scrubbed"
+  ],
+  "scope_statement": "Removes or relaxes only clauses that are not inferable from the recorded conversation or resumed workspace, and aligns the playbook criterion with the immutable golden deliverable. No new scored requirement or weight is introduced.",
+  "history_disclosure": {
+    "requirement": "The three existing workbook control views must support the meeting by surfacing schedule conflicts and exclusions, cohort readiness and gaps, and staged-versus-retained coverage exposure from their detail rows.",
+    "source_alignment": "This clarifies the source task's existing dashboard, cohort-control-total, and row-level traceability requirements; it adds no metric, business rule, or deliverable.",
+    "workspace_changed_by_disclosure_turn": false,
+    "metadata_path": "conversion/history-extension.json"
+  },
+  "trial_policy": "Freeze this rubric before running a fresh oracle and all replacement official trials; prior rewards are not valid for this rubric revision."
+}

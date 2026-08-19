@@ -1,0 +1,10 @@
+2026-07-09 05:12:03.221 INFO [catalog.load] source=cod_Cu.json records=36637 status=loaded
+2026-07-09 05:12:06.944 INFO [catalog.load] source=oqmd_formation_energies.json records=5000 status=loaded
+2026-07-09 05:12:08.410 WARN [lab.ingest] duplicate_key=LR-COND-0726-04 lot=LOT-CU-2607-C action=kept_first
+2026-07-09 05:12:11.733 WARN [lab.ingest] unit_token=uohm_cm normalized_to=µΩ·cm source=conductivity_panel_tests.csv
+2026-07-09 05:12:19.106 ERROR [literature.match] record=LIT-0726-07 reason=title_scope_mismatch
+Traceback (most recent call last):
+  File "/srv/etl/literature.py", line 88, in attach_property
+    raise ValueError("metadata match lacks property table")
+ValueError: metadata match lacks property table
+2026-07-09 05:12:24.551 INFO [catalog.load] source=aflow_conductor_slice.csv records=9 status=loaded

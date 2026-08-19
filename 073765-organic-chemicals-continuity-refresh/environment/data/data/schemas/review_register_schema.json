@@ -1,0 +1,68 @@
+{
+  "schema_id": "SCHEMA-SOURCE-REGISTER-23-02",
+  "record_population_fields": [
+    "record_id",
+    "source_release",
+    "source_row",
+    "source_classification",
+    "source_record_stage",
+    "source_coverage_note",
+    "ref_year",
+    "flow_code",
+    "partner_code",
+    "partner2_code",
+    "mot_code",
+    "primary_value",
+    "is_reported",
+    "is_aggregate",
+    "legacy_estimation_flag",
+    "inclusion_status",
+    "quality_decision_id",
+    "governing_rule"
+  ],
+  "quality_decision_fields": [
+    "quality_decision_id",
+    "evidence_id",
+    "source_scope",
+    "decision",
+    "inclusion_status",
+    "affected_records",
+    "rationale",
+    "governing_rule"
+  ],
+  "governance_fields": [
+    "parameter_id",
+    "current_governing_version",
+    "current_value",
+    "superseded_version",
+    "superseded_value",
+    "result_changed_by_supersession",
+    "result_effect",
+    "governing_evidence"
+  ],
+  "entity_resolution_fields": [
+    "canonical_entity_id",
+    "erp_code",
+    "procurement_po_numbers",
+    "supplier_portal_id",
+    "bom_reference",
+    "hs_tariff_code",
+    "hs_chapter",
+    "tier1_supplier",
+    "trade_partner_market_code",
+    "trade_scope_id",
+    "mapping_status",
+    "resolution_note",
+    "governing_reference"
+  ],
+  "risk_register_fields": [
+    "risk_id",
+    "erp_code",
+    "po_number",
+    "open_qty_kg",
+    "tier3_source",
+    "risk_adjusted_exposure_gbp",
+    "action_status",
+    "exception_document_id"
+  ]
+}

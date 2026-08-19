@@ -1,0 +1,7 @@
+assay_id,lot_id,material_id,oxygen_ppm,sulfur_ppm,lead_ppm,bismuth_ppm,iron_ppm,nickel_ppm,record_status,assay_time_utc
+ASSAY-0726-01,LOT-CU-2607-A,MAT-CU-C101,3.2,2.1,1.2,0.4,4.0,2.0,validated,2026-07-01T16:10:00Z
+ASSAY-0726-02,LOT-CU-2607-B,MAT-CU-WIRE,6.2,2.8,0.9,0.5,4.8,2.4,validated,2026-07-03T15:02:00Z
+ASSAY-0726-03,LOT-CU-2607-C,MAT-CU-HBPLATE,4.8,3.6,3.2,1.1,5.0,3.9,validated,2026-07-05T14:45:00Z
+ASSAY-0726-04,LOT-CU-2607-D,MAT-CU-HBPLATE,4.6,5.0,4.6,1.2,5.4,4.7,validated,2026-07-07T17:28:00Z
+ASSAY-0726-04R,LOT-CU-2607-D,MAT-CU-HBPLATE,4.6,5.1,4.6,1.2,5.4,4.7,duplicate_sync,2026-07-07T17:28:04Z
+ASSAY-0726-05,LOT-CU-2607-E,MAT-CU3SN-ETA,4.4,3.9,5.4,1.0,6.0,4.1,validated,2026-07-08T12:18:00Z

@@ -1,0 +1,10 @@
+material_id,aflow_compound,auid,spacegroup_relax,pearson_symbol_relax,enthalpy_formation_atom_ev,volume_atom_a3,aurl
+MAT-AGALCU-INCL,Ag1Al1Cu1,aflow:19ae1fff932d1df8,42,oF12,-0.084267,14.976,aflowlib.duke.edu:AFLOWDATA/LIB3_WEB/AgAlCu_pv/TBCC001.ABC
+MAT-AGALCU-INCL,Ag1Al1Cu1,aflow:53725bf233e77afc,107,tI6,-0.0961982,14.6959,aflowlib.duke.edu:AFLOWDATA/LIB3_WEB/AgAlCu_pv/TBCC003.ABC
+MAT-AGALCU-INCL,Ag1Al1Cu1,aflow:65ad75192503ef40,107,tI6,-0.0915473,14.8517,aflowlib.duke.edu:AFLOWDATA/LIB3_WEB/AgAlCu_pv/TFCC003.ABC
+MAT-AGALCU-INCL,Ag1Al1Cu1,aflow:aca47c434f9e2dc8,44,oI6,-0.0973103,14.7391,aflowlib.duke.edu:AFLOWDATA/LIB3_WEB/AgAlCu_pv/TFCC002.ABC
+MAT-AGALCU-INCL,Ag1Al1Cu2,aflow:58ef78db88741d84,123,tP4,-0.0901472,13.9606,aflowlib.duke.edu:AFLOWDATA/LIB3_WEB/AgAlCu_pv/TBCC011.CAB
+MAT-AGALCU-INCL,Ag1Al1Cu2,aflow:bc7191682427e0db,47,oP4,-0.087655,14.1799,aflowlib.duke.edu:AFLOWDATA/LIB3_WEB/AgAlCu_pv/TFCC010.CAB
+MAT-AGALCU-INCL,Ag1Al1Cu2,aflow:e96a2b45334f7475,123,tP4,-0.086887,14.1042,aflowlib.duke.edu:AFLOWDATA/LIB3_WEB/AgAlCu_pv/TFCC012.CAB
+MAT-AGALCU-INCL,Ag1Al2Cu1,aflow:c3d5872edfcfea9b,25,oP4,-0.0816937,15.3479,aflowlib.duke.edu:AFLOWDATA/LIB3_WEB/AgAlCu_pv/TFCC005.BCA
+MAT-CU-C101,Cu1,aflow:query-snapshot-cu-a1-202607,225,cF4,0.0,11.81,AFLOW A1 copper query snapshot supplied with July conductor package

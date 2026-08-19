@@ -1,0 +1,41 @@
+name = "parsewave/073765-organic-chemicals-continuity-refresh"
+artifacts = [ "/app/output",]
+schema_version = "1.2"
+multi_step_reward_strategy = "final"
+
+[task]
+name = "parsewave/073765-organic-chemicals-continuity-refresh"
+
+[verifier]
+timeout_sec = 2200
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 4
+memory_mb = 4096
+storage_mb = 10240
+
+[metadata.multiturn]
+checkpoint_workspace = "/app/task"
+mode = "native_resume"
+construction_harness = "codex"
+official_resume_harness = "sweagent"
+session_format = "native_sweagent_traj"
+portable_audit_format = "ATIF-v1.5"
+history_conversion = true
+runtime_adapter = "all_for_one.multiturn.harbor_sweagent_resume:SweAgentResume"
+trajectory_path = "conversation/conversation.traj"
+native_session_path = "conversation/conversation.traj"
+sweagent_session_path = "conversation/conversation.traj"
+current_user_path = "instruction.md"
+resume_trajectory_sha256 = "c891b00532e5a790a63c5e985f2fd98df86cf28f4a336bb245fa2703d515726e"
+initial_environment_sha256 = "ea55a1d6fd8d617c874025394bb90aa59616fe5bf061efe4cb7d84911d74b32d"
+replay_config_sha256 = "0b5c56eb08dee0ae1e6082bec3a4c4bea70fe000973d387a919cda0b54cafb65"
+environment_layout = "dual_initial_resume_v1"
+initial_environment_path = "initial"
+resume_environment_path = "environment"
+converter_commit = "9b285839b6ec4c9aadc6234a95f28d1af66f3b3e"
+conversion_mode = "legacy_jsonl"
